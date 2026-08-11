@@ -1,0 +1,230 @@
+Setting Up prerequisites...
+$ bench setup role supervisor
+[WARNING]: No inventory was parsed, only implicit localhost is available
+[WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+ansible-playbook [core 2.20.1]
+  config file = None
+  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /root/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible-playbook
+  python version = 3.14.4 (main, Jun 18 2026, 14:25:02) [GCC 15.2.0] (/usr/bin/python3)
+  jinja version = 3.1.6
+  pyyaml version = 6.0.3 (with libyaml v0.2.5)
+No config file found; using defaults
+setting up inventory plugins
+Loading collection ansible.builtin from 
+host_list declined parsing /etc/ansible/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+script declined parsing /etc/ansible/hosts as it did not pass its verify_file() method
+auto declined parsing /etc/ansible/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+yaml declined parsing /etc/ansible/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+ini declined parsing /etc/ansible/hosts as it did not pass its verify_file() method
+Skipping due to inventory source not existing or not being readable by the current user
+toml declined parsing /etc/ansible/hosts as it did not pass its verify_file() method
+redirecting (type: action) ansible.builtin.yum to ansible.builtin.dnf
+redirecting (type: action) ansible.builtin.yum to ansible.builtin.dnf
+redirecting (type: action) ansible.builtin.yum to ansible.builtin.dnf
+redirecting (type: action) ansible.builtin.yum to ansible.builtin.dnf
+redirecting (type: action) ansible.builtin.yum to ansible.builtin.dnf
+redirecting (type: action) ansible.builtin.yum to ansible.builtin.dnf
+redirecting (type: modules) ansible.builtin.homebrew to community.general.homebrew
+Loading collection community.general from /usr/lib/python3/dist-packages/ansible_collections/community/general
+redirecting (type: action) ansible.builtin.yum to ansible.builtin.dnf
+redirecting (type: modules) ansible.builtin.selinux to ansible.posix.selinux
+Loading collection ansible.posix from /usr/lib/python3/dist-packages/ansible_collections/ansible/posix
+redirecting (type: action) ansible.builtin.yum to ansible.builtin.dnf
+Loading callback plugin default of type stdout, v2.0 from /usr/lib/python3/dist-packages/ansible/plugins/callback/default.py
+Skipping callback 'minimal', as we already have a stdout callback.
+Skipping callback 'oneline', as we already have a stdout callback.
+
+PLAYBOOK: site.yml *************************************************************
+Positional arguments: site.yml
+verbosity: 4
+connection: local
+become_method: sudo
+tags: ('supervisor',)
+inventory: ('/etc/ansible/hosts',)
+extra_vars: ('{"production": true, "admin_emails": "", "mysql_root_password": null, "container": false}',)
+forks: 5
+2 plays in site.yml
+
+PLAY [localhost] ***************************************************************
+
+TASK [Gathering Facts] *********************************************************
+task path: /home/thennarasu/.local/share/uv/tools/frappe-bench/lib/python3.14/site-packages/bench/playbooks/site.yml:4
+<127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: root
+<127.0.0.1> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1785753494.920631-22543-5411733629915 `" && echo ansible-tmp-1785753494.920631-22543-5411733629915="` echo /root/.ansible/tmp/ansible-tmp-1785753494.920631-22543-5411733629915 `" ) && sleep 0'
+Using module file /usr/lib/python3/dist-packages/ansible/modules/setup.py
+<127.0.0.1> PUT /root/.ansible/tmp/ansible-local-22533wfo6udim/tmppf209_ys TO /root/.ansible/tmp/ansible-tmp-1785753494.920631-22543-5411733629915/AnsiballZ_setup.py
+<127.0.0.1> EXEC /bin/sh -c 'chmod u+rwx /root/.ansible/tmp/ansible-tmp-1785753494.920631-22543-5411733629915/ /root/.ansible/tmp/ansible-tmp-1785753494.920631-22543-5411733629915/AnsiballZ_setup.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1785753494.920631-22543-5411733629915/AnsiballZ_setup.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1785753494.920631-22543-5411733629915/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost]
+redirecting (type: action) ansible.builtin.yum to ansible.builtin.dnf
+
+TASK [supervisor : Install supervisor on centos] *******************************
+task path: /home/thennarasu/.local/share/uv/tools/frappe-bench/lib/python3.14/site-packages/bench/playbooks/roles/supervisor/tasks/main.yml:2
+[WARNING]: Deprecation warnings can be disabled by setting `deprecation_warnings=False` in ansible.cfg.
+[DEPRECATION WARNING]: INJECT_FACTS_AS_VARS default to `True` is deprecated, top-level facts will not be auto injected after the change. This feature will be removed from ansible-core version 2.24.
+Origin: /home/thennarasu/.local/share/uv/tools/frappe-bench/lib/python3.14/site-packages/bench/playbooks/roles/supervisor/tasks/main.yml:4:9
+
+2 - name: Install supervisor on centos
+3   yum: name=supervisor state=present
+4   when: ansible_os_family == 'RedHat'
+          ^ column 9
+
+Use `ansible_facts["fact_name"]` (no `ansible_` prefix) instead.
+
+skipping: [localhost] => {
+    "changed": false,
+    "false_condition": "ansible_os_family == 'RedHat'",
+    "skip_reason": "Conditional result was False"
+}
+
+TASK [supervisor : Install supervisor on debian] *******************************
+task path: /home/thennarasu/.local/share/uv/tools/frappe-bench/lib/python3.14/site-packages/bench/playbooks/roles/supervisor/tasks/main.yml:6
+[DEPRECATION WARNING]: INJECT_FACTS_AS_VARS default to `True` is deprecated, top-level facts will not be auto injected after the change. This feature will be removed from ansible-core version 2.24.
+Origin: /home/thennarasu/.local/share/uv/tools/frappe-bench/lib/python3.14/site-packages/bench/playbooks/roles/supervisor/tasks/main.yml:8:9
+
+6 - name: Install supervisor on debian
+7   apt: pkg=supervisor state=present force=yes
+8   when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+          ^ column 9
+
+Use `ansible_facts["fact_name"]` (no `ansible_` prefix) instead.
+
+<127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: root
+<127.0.0.1> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1785753496.1688995-22622-142363453704905 `" && echo ansible-tmp-1785753496.1688995-22622-142363453704905="` echo /root/.ansible/tmp/ansible-tmp-1785753496.1688995-22622-142363453704905 `" ) && sleep 0'
+Using module file /usr/lib/python3/dist-packages/ansible/modules/apt.py
+<127.0.0.1> PUT /root/.ansible/tmp/ansible-local-22533wfo6udim/tmpmsakxk_5 TO /root/.ansible/tmp/ansible-tmp-1785753496.1688995-22622-142363453704905/AnsiballZ_apt.py
+<127.0.0.1> EXEC /bin/sh -c 'chmod u+rwx /root/.ansible/tmp/ansible-tmp-1785753496.1688995-22622-142363453704905/ /root/.ansible/tmp/ansible-tmp-1785753496.1688995-22622-142363453704905/AnsiballZ_apt.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1785753496.1688995-22622-142363453704905/AnsiballZ_apt.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1785753496.1688995-22622-142363453704905/ > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "cache_update_time": 1785753195,
+    "cache_updated": false,
+    "changed": true,
+    "diff": {},
+    "invocation": {
+        "module_args": {
+            "allow_change_held_packages": false,
+            "allow_downgrade": false,
+            "allow_unauthenticated": false,
+            "auto_install_module_deps": true,
+            "autoclean": false,
+            "autoremove": false,
+            "cache_valid_time": 0,
+            "clean": false,
+            "deb": null,
+            "default_release": null,
+            "dpkg_options": "force-confdef,force-confold",
+            "fail_on_autoremove": false,
+            "force": true,
+            "force_apt_get": false,
+            "install_recommends": null,
+            "lock_timeout": 60,
+            "only_upgrade": false,
+            "package": [
+                "supervisor"
+            ],
+            "pkg": "supervisor",
+            "policy_rc_d": null,
+            "purge": false,
+            "state": "present",
+            "update_cache": null,
+            "update_cache_retries": 5,
+            "update_cache_retry_max_delay": 12,
+            "upgrade": null
+        }
+    },
+    "stderr": "W: --force-yes is deprecated, use one of the options starting with --allow instead.\n",
+    "stderr_lines": [
+        "W: --force-yes is deprecated, use one of the options starting with --allow instead."
+    ],
+    "stdout": "Reading package lists...\nBuilding dependency tree...\nReading state information...\nSolving dependencies...\nSuggested packages:\n  supervisor-doc\nThe following NEW packages will be installed:\n  supervisor\n0 upgraded, 1 newly installed, 0 to remove and 14 not upgraded.\nNeed to get 287 kB of archives.\nAfter this operation, 1720 kB of additional disk space will be used.\nGet:1 http://archive.ubuntu.com/ubuntu resolute/universe amd64 supervisor all 4.3.0-1 [287 kB]\nFetched 287 kB in 2s (177 kB/s)\nSelecting previously unselected package supervisor.\r\n(Reading database ... \r(Reading database ... 5%\r(Reading database ... 10%\r(Reading database ... 15%\r(Reading database ... 20%\r(Reading database ... 25%\r(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r(Reading database ... 73332 files and directories currently installed.)\r\nPreparing to unpack .../supervisor_4.3.0-1_all.deb ...\r\nUnpacking supervisor (4.3.0-1) ...\r\nSetting up supervisor (4.3.0-1) ...\r\nCreated symlink '/etc/systemd/system/multi-user.target.wants/supervisor.service' → '/usr/lib/systemd/system/supervisor.service'.\r\r\nProcessing triggers for man-db (2.13.1-1build1) ...\r\n",
+    "stdout_lines": [
+        "Reading package lists...",
+        "Building dependency tree...",
+        "Reading state information...",
+        "Solving dependencies...",
+        "Suggested packages:",
+        "  supervisor-doc",
+        "The following NEW packages will be installed:",
+        "  supervisor",
+        "0 upgraded, 1 newly installed, 0 to remove and 14 not upgraded.",
+        "Need to get 287 kB of archives.",
+        "After this operation, 1720 kB of additional disk space will be used.",
+        "Get:1 http://archive.ubuntu.com/ubuntu resolute/universe amd64 supervisor all 4.3.0-1 [287 kB]",
+        "Fetched 287 kB in 2s (177 kB/s)",
+        "Selecting previously unselected package supervisor.",
+        "(Reading database ... ",
+        "(Reading database ... 5%",
+        "(Reading database ... 10%",
+        "(Reading database ... 15%",
+        "(Reading database ... 20%",
+        "(Reading database ... 25%",
+        "(Reading database ... 30%",
+        "(Reading database ... 35%",
+        "(Reading database ... 40%",
+        "(Reading database ... 45%",
+        "(Reading database ... 50%",
+        "(Reading database ... 55%",
+        "(Reading database ... 60%",
+        "(Reading database ... 65%",
+        "(Reading database ... 70%",
+        "(Reading database ... 75%",
+        "(Reading database ... 80%",
+        "(Reading database ... 85%",
+        "(Reading database ... 90%",
+        "(Reading database ... 95%",
+        "(Reading database ... 100%",
+        "(Reading database ... 73332 files and directories currently installed.)",
+        "Preparing to unpack .../supervisor_4.3.0-1_all.deb ...",
+        "Unpacking supervisor (4.3.0-1) ...",
+        "Setting up supervisor (4.3.0-1) ...",
+        "Created symlink '/etc/systemd/system/multi-user.target.wants/supervisor.service' → '/usr/lib/systemd/system/supervisor.service'.",
+        "",
+        "Processing triggers for man-db (2.13.1-1build1) ..."
+    ]
+}
+
+PLAY [setup bench and dev environment] *****************************************
+
+TASK [Gathering Facts] *********************************************************
+task path: /home/thennarasu/.local/share/uv/tools/frappe-bench/lib/python3.14/site-packages/bench/playbooks/site.yml:40
+<127.0.0.1> ESTABLISH LOCAL CONNECTION FOR USER: root
+<127.0.0.1> EXEC /bin/sh -c 'echo ~root && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /root/.ansible/tmp `"&& mkdir "` echo /root/.ansible/tmp/ansible-tmp-1785753502.9956052-22842-160094752914559 `" && echo ansible-tmp-1785753502.9956052-22842-160094752914559="` echo /root/.ansible/tmp/ansible-tmp-1785753502.9956052-22842-160094752914559 `" ) && sleep 0'
+Using module file /usr/lib/python3/dist-packages/ansible/modules/setup.py
+<127.0.0.1> PUT /root/.ansible/tmp/ansible-local-22533wfo6udim/tmptlohyn8x TO /root/.ansible/tmp/ansible-tmp-1785753502.9956052-22842-160094752914559/AnsiballZ_setup.py
+<127.0.0.1> EXEC /bin/sh -c 'chmod u+rwx /root/.ansible/tmp/ansible-tmp-1785753502.9956052-22842-160094752914559/ /root/.ansible/tmp/ansible-tmp-1785753502.9956052-22842-160094752914559/AnsiballZ_setup.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c '/usr/bin/python3 /root/.ansible/tmp/ansible-tmp-1785753502.9956052-22842-160094752914559/AnsiballZ_setup.py && sleep 0'
+<127.0.0.1> EXEC /bin/sh -c 'rm -f -r /root/.ansible/tmp/ansible-tmp-1785753502.9956052-22842-160094752914559/ > /dev/null 2>&1 && sleep 0'
+ok: [localhost]
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+
+Setting Up supervisor...
+Setting Up NGINX...
+Port configuration list:
+
+Site library.local assigned port: 80
+
+Site mysite.local assigned port: 8001
+
+Site project1 assigned port: 8002
+
+Site project assigned port: 8003
+
+Site cabs assigned port: 8004
+Setting Up symlinks and reloading services...
+$ sudo /usr/sbin/nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+$ sudo systemctl reload nginx

@@ -1,0 +1,3 @@
+2026-08-04 11:20:00,223 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for cabs
+2026-08-04 11:20:00,229 ERROR scheduler Skipped queueing frappe.email.doctype.notification.notification.trigger_offset_alerts because it was found in queue for cabs
+2026-08-04 11:20:00,230 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for cabs

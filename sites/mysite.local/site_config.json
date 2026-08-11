@@ -1,0 +1,11 @@
+{
+ "db_name": "_1f3a7ccb229053db",
+ "db_password": "nFQo5NTBZiD8GOea",
+ "db_type": "mariadb",
+ "db_user": "_1f3a7ccb229053db",
+ "developer_mode": 1,
+ "installed_apps": [
+  "frappe",
+  "education"
+ ]
+}

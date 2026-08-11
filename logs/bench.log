@@ -1,0 +1,713 @@
+2026-07-15 07:13:30,601 DEBUG cd new-bench && uv venv env --seed --python python3
+2026-07-15 07:13:33,258 LOG Getting frappe
+2026-07-15 07:13:33,258 DEBUG cd new-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-16 --depth 1 --origin upstream
+2026-07-15 07:13:39,187 LOG Installing frappe
+2026-07-15 07:13:39,188 DEBUG cd /home/thennarasu/new-bench && uv pip install --quiet -e /home/thennarasu/new-bench/apps/frappe  --python /home/thennarasu/new-bench/env/bin/python
+2026-07-15 07:13:42,379 DEBUG cd /home/thennarasu/new-bench/apps/frappe && yarn install --check-files
+2026-07-15 07:13:47,814 DEBUG cd new-bench && bench build
+2026-07-15 07:13:47,896 INFO /home/thennarasu/.local/bin/bench build
+2026-07-15 07:13:58,196 LOG setting up backups
+2026-07-15 07:13:58,211 LOG backups were set up
+2026-07-15 07:13:58,211 INFO Bench new-bench initialized
+2026-07-15 07:14:32,792 INFO /home/thennarasu/.local/bin/bench new-site mysite.local
+2026-07-15 07:15:54,693 INFO /home/thennarasu/.local/bin/bench start
+2026-07-15 07:15:54,927 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-15 07:15:54,928 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-15 07:15:54,931 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-15 07:15:54,937 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-15 07:15:54,937 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-15 07:16:22,606 INFO /home/thennarasu/.local/bin/bench build
+2026-07-15 07:16:38,793 INFO /home/thennarasu/.local/bin/bench start
+2026-07-15 07:16:39,003 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-15 07:16:39,003 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-15 07:16:39,005 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-15 07:16:39,008 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-15 07:16:39,010 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-15 07:17:45,122 INFO /home/thennarasu/.local/bin/bench version
+2026-07-15 07:17:55,531 INFO /home/thennarasu/.local/bin/bench --site mysite.local list-apps
+2026-07-15 07:18:07,197 INFO /home/thennarasu/.local/bin/bench use mysite.local
+2026-07-15 07:18:13,950 INFO /home/thennarasu/.local/bin/bench start
+2026-07-15 07:18:14,327 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-15 07:18:14,331 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-15 07:18:14,333 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-15 07:18:14,363 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-15 07:18:14,366 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-15 07:20:03,321 INFO /home/thennarasu/.local/bin/bench clear-cache
+2026-07-15 07:20:23,094 INFO /home/thennarasu/.local/bin/bench clear-website-cache
+2026-07-15 07:20:30,832 INFO /home/thennarasu/.local/bin/bench migrate
+2026-07-15 07:20:39,725 INFO /home/thennarasu/.local/bin/bench build
+2026-07-15 07:20:58,159 INFO /home/thennarasu/.local/bin/bench start
+2026-07-15 07:20:58,607 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-15 07:20:58,612 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-15 07:20:58,613 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-15 07:20:58,616 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-15 07:20:58,651 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-15 07:21:51,646 INFO /home/thennarasu/.local/bin/bench start
+2026-07-15 07:21:52,050 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-15 07:21:52,057 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-15 07:21:52,060 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-15 07:21:52,061 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-15 07:21:52,061 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-15 07:24:24,364 INFO /home/thennarasu/.local/bin/bench start
+2026-07-15 07:24:24,756 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-15 07:24:24,759 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-15 07:24:24,765 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-15 07:24:24,767 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-15 07:24:24,779 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-15 07:25:00,785 INFO /home/thennarasu/.local/bin/bench start
+2026-07-15 07:25:01,184 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-15 07:25:01,185 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-15 07:25:01,189 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-15 07:25:01,189 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-15 07:25:01,194 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-15 08:49:52,580 INFO /home/thennarasu/.local/bin/bench version
+2026-07-15 08:51:38,238 INFO /home/thennarasu/.local/bin/bench version
+2026-07-15 08:52:15,093 INFO /home/thennarasu/.local/bin/bench start
+2026-07-15 08:52:15,575 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-15 08:52:15,580 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-15 08:52:15,584 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-15 08:52:15,587 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-15 08:52:15,592 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-15 08:56:51,679 INFO /home/thennarasu/.local/bin/bench sites
+2026-07-15 08:57:11,245 INFO /home/thennarasu/.local/bin/bench list-sites
+2026-07-15 08:57:38,142 INFO /home/thennarasu/.local/bin/bench --site mysite.local list-apps
+2026-07-15 08:58:20,343 INFO /home/thennarasu/.local/bin/bench --site mysite.local list-apps
+2026-07-15 08:59:49,808 INFO /home/thennarasu/.local/bin/bench new-app education
+2026-07-15 08:59:49,813 LOG creating new app education
+2026-07-15 09:02:34,789 LOG Installing education
+2026-07-15 09:02:34,790 DEBUG cd /home/thennarasu/new-bench && uv pip install --quiet -e /home/thennarasu/new-bench/apps/education  --python /home/thennarasu/new-bench/env/bin/python
+2026-07-15 09:02:35,433 DEBUG bench build --app education
+2026-07-15 09:02:35,580 INFO /home/thennarasu/.local/bin/bench build --app education
+2026-07-15 09:03:04,210 INFO /home/thennarasu/.local/bin/bench --site mysite.local install-app edutech
+2026-07-15 09:03:12,966 INFO /home/thennarasu/.local/bin/bench --site mysite.local install-app EduTech
+2026-07-15 09:03:34,644 INFO /home/thennarasu/.local/bin/bench --site mysite.local install-app education
+2026-07-15 09:05:24,031 INFO /home/thennarasu/.local/bin/bench start
+2026-07-15 09:05:24,445 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-15 09:05:24,454 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-15 09:05:24,457 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-15 09:05:24,457 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-15 09:05:24,463 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-15 09:06:34,641 INFO /home/thennarasu/.local/bin/bench --site mysite.local set-config developer_mode 1
+2026-07-15 09:06:45,432 INFO /home/thennarasu/.local/bin/bench restart
+2026-07-15 11:35:07,779 INFO /home/thennarasu/.local/bin/bench status
+2026-07-15 11:35:19,079 INFO /home/thennarasu/.local/bin/bench start
+2026-07-15 11:35:36,918 INFO /home/thennarasu/.local/bin/bench start
+2026-07-15 11:35:44,652 INFO /home/thennarasu/.local/bin/bench start
+2026-07-15 11:35:51,697 INFO /home/thennarasu/.local/bin/bench restart
+2026-07-15 11:35:54,561 INFO /home/thennarasu/.local/bin/bench start
+2026-07-15 11:36:20,146 INFO /home/thennarasu/.local/bin/bench init
+2026-07-15 11:36:20,152 WARNING /home/thennarasu/.local/bin/bench init executed with exit code 2
+2026-07-15 11:36:22,574 INFO /home/thennarasu/.local/bin/bench start
+2026-07-15 11:39:21,656 INFO /home/thennarasu/.local/bin/bench start
+2026-07-15 11:39:22,066 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-15 11:39:22,069 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-15 11:39:22,083 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-15 11:39:22,086 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-15 11:39:22,089 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-15 11:41:25,752 INFO /home/thennarasu/.local/bin/bench start
+2026-07-15 11:41:26,199 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-15 11:41:26,201 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-15 11:41:26,205 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-15 11:41:26,209 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-15 11:41:26,220 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-15 11:41:45,276 INFO /home/thennarasu/.local/bin/bench build
+2026-07-15 11:42:09,921 INFO /home/thennarasu/.local/bin/bench version
+2026-07-15 11:42:16,247 INFO /home/thennarasu/.local/bin/bench start
+2026-07-15 11:42:16,630 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-15 11:42:16,631 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-15 11:42:16,648 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-15 11:42:16,650 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-15 11:42:16,674 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-15 11:43:26,195 INFO /home/thennarasu/.local/bin/bench start
+2026-07-15 11:43:26,588 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-15 11:43:26,592 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-15 11:43:26,603 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-15 11:43:26,605 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-15 11:43:26,622 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-15 11:43:29,487 INFO /home/thennarasu/.local/bin/bench start
+2026-07-15 11:43:29,860 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-15 11:43:29,860 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-15 11:43:29,864 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-15 11:43:29,866 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-15 11:43:29,873 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-15 11:44:02,573 INFO /home/thennarasu/.local/bin/bench start
+2026-07-15 11:44:02,937 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-15 11:44:02,941 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-15 11:44:02,945 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-15 11:44:02,949 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-15 11:44:02,977 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-15 11:47:19,367 INFO /home/thennarasu/.local/bin/bench start
+2026-07-15 11:47:19,911 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-15 11:47:19,914 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-15 11:47:19,927 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-15 11:47:19,927 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-15 11:47:19,937 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-15 11:47:47,898 INFO /home/thennarasu/.local/bin/bench start
+2026-07-15 11:47:48,305 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-15 11:47:48,306 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-15 11:47:48,306 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-15 11:47:48,307 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-15 11:47:48,319 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-15 11:48:11,024 INFO /home/thennarasu/.local/bin/bench start
+2026-07-15 11:48:11,358 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-15 11:48:11,398 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-15 11:48:11,406 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-15 11:48:11,415 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-15 11:48:11,422 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-15 12:00:02,179 INFO /home/thennarasu/.local/bin/bench --verbose --site all backup
+2026-07-16 06:45:16,610 INFO /home/thennarasu/.local/bin/bench find .
+2026-07-16 06:46:45,679 INFO /home/thennarasu/.local/bin/bench new-app library-management
+2026-07-16 06:46:45,684 LOG creating new app library_management
+2026-07-16 06:53:23,521 LOG Installing library_management
+2026-07-16 06:53:23,522 DEBUG cd /home/thennarasu/new-bench && uv pip install --quiet -e /home/thennarasu/new-bench/apps/library_management  --python /home/thennarasu/new-bench/env/bin/python
+2026-07-16 06:53:25,441 DEBUG bench build --app library_management
+2026-07-16 06:53:25,561 INFO /home/thennarasu/.local/bin/bench build --app library_management
+2026-07-16 07:05:58,684 INFO /home/thennarasu/.local/bin/bench new-site library.local
+2026-07-16 07:06:09,026 INFO /home/thennarasu/.local/bin/bench new-site library.local
+2026-07-16 07:08:23,955 INFO /home/thennarasu/.local/bin/bench new-site library.local
+2026-07-16 07:11:33,509 INFO /home/thennarasu/.local/bin/bench --site library.local install-app library_management
+2026-07-16 07:12:27,821 INFO /home/thennarasu/.local/bin/bench --site library.local list-apps
+2026-07-16 08:08:46,108 INFO /home/thennarasu/.local/bin/bench start
+2026-07-16 08:08:46,520 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-16 08:08:46,532 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-16 08:08:46,534 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-16 08:08:46,540 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-16 08:08:46,541 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-16 08:12:20,748 INFO /home/thennarasu/.local/bin/bench start
+2026-07-16 08:12:21,047 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-16 08:12:21,056 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-16 08:12:21,060 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-16 08:12:21,084 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-16 08:12:21,092 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-16 08:13:56,967 INFO /home/thennarasu/.local/bin/bench use library.local
+2026-07-16 08:14:01,983 INFO /home/thennarasu/.local/bin/bench start
+2026-07-16 08:14:02,344 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-16 08:14:02,348 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-16 08:14:02,350 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-16 08:14:02,366 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-16 08:14:02,374 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-16 08:16:30,010 INFO /home/thennarasu/.local/bin/bench build
+2026-07-16 08:16:50,317 INFO /home/thennarasu/.local/bin/bench clear-cache
+2026-07-16 08:16:56,380 INFO /home/thennarasu/.local/bin/bench start
+2026-07-16 08:16:56,740 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-16 08:16:56,747 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-16 08:16:56,749 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-16 08:16:56,754 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-16 08:16:56,783 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-16 08:26:53,687 INFO /home/thennarasu/.local/bin/bench --site library.local set-config developer_mode 1
+2026-07-16 08:27:20,138 INFO /home/thennarasu/.local/bin/bench --site library.local show-config
+2026-07-16 08:27:43,946 INFO /home/thennarasu/.local/bin/bench --site library.local show-config
+2026-07-16 08:33:58,797 INFO /home/thennarasu/.local/bin/bench --site library.localhost set-config developer_mode 1
+2026-07-16 08:34:19,918 INFO /home/thennarasu/.local/bin/bench --site library.localhost set-config developer_mode 0
+2026-07-16 08:34:35,364 INFO /home/thennarasu/.local/bin/bench --site library.localhost set-config developer-mode 0
+2026-07-16 08:35:46,978 INFO /home/thennarasu/.local/bin/bench --site library.local set-config developer_mode 1
+2026-07-16 08:35:57,504 INFO /home/thennarasu/.local/bin/bench start
+2026-07-16 08:35:57,914 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-16 08:35:57,919 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-16 08:35:57,925 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-16 08:35:57,925 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-16 08:35:57,940 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-16 10:50:43,639 INFO /home/thennarasu/.local/bin/bench start
+2026-07-16 10:50:44,057 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-16 10:50:44,064 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-16 10:50:44,069 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-16 10:50:44,069 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-16 10:50:44,087 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-16 11:11:08,302 INFO /home/thennarasu/.local/bin/bench mariadb
+2026-07-16 11:13:19,311 INFO /home/thennarasu/.local/bin/bench mariadb
+2026-07-16 12:00:01,231 INFO /home/thennarasu/.local/bin/bench --verbose --site all backup
+2026-07-16 12:49:53,652 INFO /home/thennarasu/.local/bin/bench start
+2026-07-16 12:50:12,054 INFO /home/thennarasu/.local/bin/bench stop
+2026-07-16 12:50:42,566 INFO /home/thennarasu/.local/bin/bench start
+2026-07-16 12:54:12,671 INFO /home/thennarasu/.local/bin/bench start
+2026-07-16 12:54:13,111 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-16 12:54:13,114 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-16 12:54:13,116 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-16 12:54:13,116 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-16 12:54:13,126 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-17 04:57:43,065 INFO /home/thennarasu/.local/bin/bench start
+2026-07-17 04:57:43,466 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-17 04:57:43,470 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-17 04:57:43,471 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-17 04:57:43,483 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-17 04:57:43,486 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-17 06:09:09,351 INFO /home/thennarasu/.local/bin/bench start
+2026-07-17 06:09:09,736 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-17 06:09:09,736 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-17 06:09:09,739 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-17 06:09:09,751 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-17 06:09:09,753 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-17 07:05:50,512 INFO /home/thennarasu/.local/bin/bench mariadb
+2026-07-17 07:06:29,417 INFO /home/thennarasu/.local/bin/bench mariadb
+2026-07-17 07:08:39,211 INFO /home/thennarasu/.local/bin/bench mariadb
+2026-07-17 07:10:15,873 INFO /home/thennarasu/.local/bin/bench mysql
+2026-07-17 07:10:20,683 INFO /home/thennarasu/.local/bin/bench Mysql
+2026-07-17 07:10:28,209 INFO /home/thennarasu/.local/bin/bench MySql
+2026-07-17 12:56:08,585 INFO /home/thennarasu/.local/bin/bench start
+2026-07-17 12:56:08,998 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-17 12:56:09,000 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-17 12:56:09,009 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-17 12:56:09,020 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-17 12:56:09,025 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-17 13:03:54,498 INFO /home/thennarasu/.local/bin/bench start
+2026-07-17 13:03:54,933 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-17 13:03:54,937 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-17 13:03:54,948 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-17 13:03:54,950 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-17 13:03:54,956 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-19 10:16:33,083 INFO /home/thennarasu/.local/bin/bench start
+2026-07-19 10:16:33,533 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-19 10:16:33,546 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-19 10:16:33,547 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-19 10:16:33,556 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-19 10:16:33,560 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-20 04:57:42,242 INFO /home/thennarasu/.local/bin/bench start
+2026-07-20 04:57:42,525 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-20 04:57:42,526 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-20 04:57:42,528 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-20 04:57:42,535 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-20 04:57:42,538 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-20 08:18:59,874 INFO /home/thennarasu/.local/bin/bench start
+2026-07-20 08:19:00,281 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-20 08:19:00,290 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-20 08:19:00,294 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-20 08:19:00,296 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-20 08:19:00,310 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-21 04:44:26,017 INFO /home/thennarasu/.local/bin/bench start
+2026-07-21 04:44:26,401 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-21 04:44:26,405 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-21 04:44:26,417 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-21 04:44:26,425 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-21 04:44:26,428 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-21 04:47:44,934 INFO /home/thennarasu/.local/bin/bench start
+2026-07-21 04:47:45,315 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-21 04:47:45,316 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-21 04:47:45,319 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-21 04:47:45,328 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-21 04:47:45,333 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-21 05:01:22,159 INFO /home/thennarasu/.local/bin/bench --site library.local set-config developer_mode 1
+2026-07-21 06:00:02,078 INFO /home/thennarasu/.local/bin/bench --verbose --site all backup
+2026-07-22 04:47:34,324 INFO /home/thennarasu/.local/bin/bench start
+2026-07-22 04:47:34,545 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-22 04:47:34,548 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-22 04:47:34,548 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-22 04:47:34,549 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-22 04:47:34,552 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-22 06:00:01,675 INFO /home/thennarasu/.local/bin/bench --verbose --site all backup
+2026-07-22 08:22:06,995 INFO /home/thennarasu/.local/bin/bench start
+2026-07-22 08:22:07,356 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-22 08:22:07,373 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-22 08:22:07,377 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-22 08:22:07,381 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-22 08:22:07,391 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-22 08:48:35,632 INFO /home/thennarasu/.local/bin/bench restart
+2026-07-22 08:48:39,983 INFO /home/thennarasu/.local/bin/bench clear-cache
+2026-07-22 08:48:44,260 INFO /home/thennarasu/.local/bin/bench start
+2026-07-22 08:48:44,678 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-22 08:48:44,690 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-22 08:48:44,695 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-22 08:48:44,699 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-22 08:48:44,701 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-22 09:10:59,693 INFO /home/thennarasu/.local/bin/bench find .
+2026-07-22 09:11:04,785 INFO /home/thennarasu/.local/bin/bench start
+2026-07-22 09:11:13,023 INFO /home/thennarasu/.local/bin/bench stop
+2026-07-22 09:13:42,220 INFO /home/thennarasu/.local/bin/bench start
+2026-07-22 09:13:42,600 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-22 09:13:42,604 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-22 09:13:42,607 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-22 09:13:42,623 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-22 09:13:42,648 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-22 11:59:27,780 INFO /home/thennarasu/.local/bin/bench mariadb
+2026-07-22 12:00:01,650 INFO /home/thennarasu/.local/bin/bench --verbose --site all backup
+2026-07-22 12:29:10,560 INFO /home/thennarasu/.local/bin/bench start
+2026-07-22 12:29:10,919 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-22 12:29:10,927 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-22 12:29:10,939 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-22 12:29:10,939 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-22 12:29:10,942 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-22 12:32:20,194 INFO /home/thennarasu/.local/bin/bench mariadb
+2026-07-22 12:33:06,473 INFO /home/thennarasu/.local/bin/bench mariadb
+2026-07-22 12:34:46,677 INFO /home/thennarasu/.local/bin/bench mariadb
+2026-07-22 12:39:31,885 INFO /home/thennarasu/.local/bin/bench mariadb
+2026-07-23 04:46:37,723 INFO /home/thennarasu/.local/bin/bench start
+2026-07-23 04:46:38,054 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-23 04:46:38,065 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-23 04:46:38,082 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-23 04:46:38,083 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-23 04:46:38,093 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-23 06:00:01,646 INFO /home/thennarasu/.local/bin/bench --verbose --site all backup
+2026-07-23 06:08:58,558 INFO /home/thennarasu/.local/bin/bench new-site project1
+2026-07-23 06:09:08,696 INFO /home/thennarasu/.local/bin/bench new-site project1
+2026-07-23 06:10:21,388 INFO /home/thennarasu/.local/bin/bench new-site project
+2026-07-23 06:12:33,697 INFO /home/thennarasu/.local/bin/bench use-site project
+2026-07-23 06:14:59,581 INFO /home/thennarasu/.local/bin/bench new-app School_Management
+2026-07-23 06:14:59,614 LOG creating new app school_management
+2026-07-23 06:15:42,884 LOG Installing school_management
+2026-07-23 06:15:42,885 DEBUG cd /home/thennarasu/new-bench && uv pip install --quiet -e /home/thennarasu/new-bench/apps/school_management  --python /home/thennarasu/new-bench/env/bin/python
+2026-07-23 06:15:43,695 DEBUG bench build --app school_management
+2026-07-23 06:15:43,838 INFO /home/thennarasu/.local/bin/bench build --app school_management
+2026-07-23 06:16:46,274 INFO /home/thennarasu/.local/bin/bench --site project.local install-app school_management
+2026-07-23 06:17:04,877 INFO /home/thennarasu/.local/bin/bench --site project install-app school_management
+2026-07-23 06:17:24,572 INFO /home/thennarasu/.local/bin/bench --site project list-apps
+2026-07-23 06:17:39,313 INFO /home/thennarasu/.local/bin/bench use-site project.local
+2026-07-23 06:18:15,713 INFO /home/thennarasu/.local/bin/bench use project.local
+2026-07-23 06:18:22,194 INFO /home/thennarasu/.local/bin/bench use project
+2026-07-23 06:18:26,229 INFO /home/thennarasu/.local/bin/bench start
+2026-07-23 06:18:26,692 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-23 06:18:26,693 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-23 06:18:26,707 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-23 06:18:26,707 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-23 06:18:26,733 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-23 08:14:57,924 INFO /home/thennarasu/.local/bin/bench start
+2026-07-23 08:14:58,169 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-23 08:14:58,177 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-23 08:14:58,178 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-23 08:14:58,179 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-23 08:14:58,184 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-23 08:25:26,535 INFO /home/thennarasu/.local/bin/bench set-config developer_mode 1
+2026-07-23 08:31:54,441 INFO /home/thennarasu/.local/bin/bench --site project.local console
+2026-07-23 08:32:15,034 INFO /home/thennarasu/.local/bin/bench --site project console
+2026-07-23 09:33:10,461 INFO /home/thennarasu/.local/bin/bench --site project migrate
+2026-07-23 09:33:35,745 INFO /home/thennarasu/.local/bin/bench project clear cache
+2026-07-23 09:33:49,335 INFO /home/thennarasu/.local/bin/bench --site project clear cache
+2026-07-23 09:33:54,985 INFO /home/thennarasu/.local/bin/bench --site project clear-cache
+2026-07-23 09:37:19,828 INFO /home/thennarasu/.local/bin/bench --site install-app vehicle
+2026-07-23 09:37:24,346 INFO /home/thennarasu/.local/bin/bench --site install-app
+2026-07-23 09:37:58,117 INFO /home/thennarasu/.local/bin/bench --site project install-app vehicle
+2026-07-23 09:38:13,402 INFO /home/thennarasu/.local/bin/bench new-app vehicle
+2026-07-23 09:38:13,409 LOG creating new app vehicle
+2026-07-23 09:38:42,943 LOG Installing vehicle
+2026-07-23 09:38:42,944 DEBUG cd /home/thennarasu/new-bench && uv pip install --quiet -e /home/thennarasu/new-bench/apps/vehicle  --python /home/thennarasu/new-bench/env/bin/python
+2026-07-23 09:38:43,722 DEBUG bench build --app vehicle
+2026-07-23 09:38:43,881 INFO /home/thennarasu/.local/bin/bench build --app vehicle
+2026-07-23 09:39:18,557 INFO /home/thennarasu/.local/bin/bench --site project install-app vehicle
+2026-07-23 09:39:33,363 INFO /home/thennarasu/.local/bin/bench migrate
+2026-07-23 09:40:01,319 INFO /home/thennarasu/.local/bin/bench start
+2026-07-23 09:40:01,833 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-23 09:40:01,848 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-23 09:40:01,857 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-23 09:40:01,860 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-23 09:40:01,867 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-24 04:57:09,694 INFO /home/thennarasu/.local/bin/bench start
+2026-07-24 04:57:10,130 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-24 04:57:10,131 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-24 04:57:10,133 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-24 04:57:10,148 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-24 04:57:10,148 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-24 06:14:26,913 INFO /home/thennarasu/.local/bin/bench start
+2026-07-24 06:14:27,314 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-24 06:14:27,321 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-24 06:14:27,327 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-24 06:14:27,339 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-24 06:14:27,362 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-24 06:35:18,096 INFO /home/thennarasu/.local/bin/bench stat
+2026-07-24 06:35:27,074 INFO /home/thennarasu/.local/bin/bench start
+2026-07-24 06:35:27,500 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-24 06:35:27,502 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-24 06:35:27,518 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-24 06:35:27,536 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-24 06:35:27,539 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-25 05:38:20,555 INFO /home/thennarasu/.local/bin/bench start
+2026-07-25 05:38:20,799 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-25 05:38:20,801 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-25 05:38:20,803 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-25 05:38:20,805 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-25 05:38:20,810 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-26 07:18:38,718 INFO /home/thennarasu/.local/bin/bench start
+2026-07-26 07:18:38,980 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-26 07:18:38,981 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-26 07:18:38,993 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-26 07:18:38,997 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-26 07:18:39,004 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-26 07:30:16,862 INFO /home/thennarasu/.local/bin/bench new-site cabs
+2026-07-26 07:32:35,098 INFO /home/thennarasu/.local/bin/bench use cabs
+2026-07-26 07:33:02,306 INFO /home/thennarasu/.local/bin/bench start
+2026-07-26 07:33:02,764 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-26 07:33:02,770 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-26 07:33:02,778 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-26 07:33:02,782 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-26 07:33:02,801 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-26 07:44:22,481 INFO /home/thennarasu/.local/bin/bench restart
+2026-07-26 07:44:26,098 INFO /home/thennarasu/.local/bin/bench start
+2026-07-26 07:44:26,527 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-26 07:44:26,528 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-26 07:44:26,531 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-26 07:44:26,543 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-26 07:44:26,547 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-26 07:45:01,337 INFO /home/thennarasu/.local/bin/bench --site cabs add-to-hosts
+2026-07-26 07:46:59,828 INFO /home/thennarasu/.local/bin/bench --site cabs.loca add-to-hosts
+2026-07-26 07:47:06,207 INFO /home/thennarasu/.local/bin/bench --site cabs.local add-to-hosts
+2026-07-26 07:47:10,453 INFO /home/thennarasu/.local/bin/bench --site cabs.localhost add-to-hosts
+2026-07-26 07:47:23,524 INFO /home/thennarasu/.local/bin/bench --site cabs add-to-hosts
+2026-07-26 07:47:49,366 INFO /home/thennarasu/.local/bin/bench start
+2026-07-26 07:47:49,763 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-26 07:47:49,765 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-26 07:47:49,777 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-26 07:47:49,779 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-26 07:47:49,790 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-26 07:49:28,370 INFO /home/thennarasu/.local/bin/bench ls
+2026-07-26 07:52:13,618 INFO /home/thennarasu/.local/bin/bench --site cabs add-to-hosts
+2026-07-26 07:55:03,208 INFO /home/thennarasu/.local/bin/bench use cabs
+2026-07-26 07:55:09,723 INFO /home/thennarasu/.local/bin/bench start
+2026-07-26 07:55:10,169 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-26 07:55:10,172 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-26 07:55:10,174 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-26 07:55:10,182 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-26 07:55:10,200 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-26 07:57:05,429 INFO /home/thennarasu/.local/bin/bench build
+2026-07-28 06:12:34,474 INFO /home/thennarasu/.local/bin/bench new-app practice_app
+2026-07-28 06:12:34,482 LOG creating new app practice_app
+2026-07-28 06:13:19,062 LOG Installing practice_app
+2026-07-28 06:13:19,064 DEBUG cd /home/thennarasu/new-bench && uv pip install --quiet -e /home/thennarasu/new-bench/apps/practice_app  --python /home/thennarasu/new-bench/env/bin/python
+2026-07-28 06:13:19,857 DEBUG bench build --app practice_app
+2026-07-28 06:13:19,991 INFO /home/thennarasu/.local/bin/bench build --app practice_app
+2026-07-28 06:13:44,019 INFO /home/thennarasu/.local/bin/bench --site install-app practice
+2026-07-28 06:13:59,853 INFO /home/thennarasu/.local/bin/bench new-app install practice_app
+2026-07-28 06:13:59,883 WARNING /home/thennarasu/.local/bin/bench new-app install practice_app executed with exit code 2
+2026-07-28 06:15:09,192 INFO /home/thennarasu/.local/bin/bench --site install practice_app
+2026-07-28 06:15:14,203 INFO /home/thennarasu/.local/bin/bench --site install-app practice_app
+2026-07-28 06:15:49,798 INFO /home/thennarasu/.local/bin/bench use library.local
+2026-07-28 06:16:10,834 INFO /home/thennarasu/.local/bin/bench --site library.local install-app practice_app
+2026-07-28 06:17:08,889 INFO /home/thennarasu/.local/bin/bench --site library.local ls apps
+2026-07-28 06:17:21,239 INFO /home/thennarasu/.local/bin/bench --site library.local list-apps
+2026-07-28 08:28:09,855 INFO /home/thennarasu/.local/bin/bench start
+2026-07-28 08:28:10,285 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-28 08:28:10,291 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-28 08:28:10,295 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-28 08:28:10,296 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-28 08:28:10,310 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-28 08:30:13,561 INFO /home/thennarasu/.local/bin/bench build
+2026-07-28 08:30:26,172 INFO /home/thennarasu/.local/bin/bench start
+2026-07-28 08:30:26,567 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-28 08:30:26,574 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-28 08:30:26,583 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-28 08:30:26,587 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-28 08:30:26,590 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-29 06:00:02,147 INFO /home/thennarasu/.local/bin/bench --verbose --site all backup
+2026-07-29 06:09:05,434 INFO /home/thennarasu/.local/bin/bench start
+2026-07-29 06:09:05,815 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-29 06:09:05,824 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-29 06:09:05,827 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-29 06:09:05,841 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-29 06:09:05,845 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-29 06:10:52,205 INFO /home/thennarasu/.local/bin/bench use project1
+2026-07-29 06:10:58,343 INFO /home/thennarasu/.local/bin/bench start
+2026-07-29 06:10:58,798 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-29 06:10:58,804 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-29 06:10:58,805 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-29 06:10:58,805 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-29 06:10:58,808 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-29 06:11:26,206 INFO /home/thennarasu/.local/bin/bench start
+2026-07-29 06:12:03,222 INFO /home/thennarasu/.local/bin/bench start
+2026-07-29 06:12:03,561 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-29 06:12:03,572 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-29 06:12:03,574 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-29 06:12:03,577 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-29 06:12:03,577 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-29 06:13:47,288 INFO /home/thennarasu/.local/bin/bench start
+2026-07-29 06:13:47,672 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-29 06:13:47,673 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-29 06:13:47,678 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-29 06:13:47,683 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-29 06:13:47,684 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-29 06:14:16,288 INFO /home/thennarasu/.local/bin/bench start
+2026-07-29 06:14:16,650 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-29 06:14:16,660 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-29 06:14:16,666 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-29 06:14:16,671 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-29 06:14:16,681 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-29 06:16:17,324 INFO /home/thennarasu/.local/bin/bench use project1
+2026-07-29 06:16:22,210 INFO /home/thennarasu/.local/bin/bench start
+2026-07-29 06:16:22,650 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-29 06:16:22,658 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-29 06:16:22,666 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-29 06:16:22,671 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-29 06:16:22,700 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-29 06:16:55,714 INFO /home/thennarasu/.local/bin/bench use project1.local
+2026-07-29 06:17:03,128 INFO /home/thennarasu/.local/bin/bench use library.local
+2026-07-29 06:17:06,537 INFO /home/thennarasu/.local/bin/bench start
+2026-07-29 06:17:06,895 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-29 06:17:06,900 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-29 06:17:06,911 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-29 06:17:06,913 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-29 06:17:06,921 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-29 06:29:40,774 INFO /home/thennarasu/.local/bin/bench console
+2026-07-29 06:56:02,075 INFO /home/thennarasu/.local/bin/bench console
+2026-07-29 09:20:06,590 INFO /home/thennarasu/.local/bin/bench start
+2026-07-29 09:20:07,002 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-29 09:20:07,017 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-29 09:20:07,023 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-29 09:20:07,036 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-29 09:20:07,044 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-30 06:00:01,493 INFO /home/thennarasu/.local/bin/bench --verbose --site all backup
+2026-07-30 06:42:20,363 INFO /home/thennarasu/.local/bin/bench build
+2026-07-30 06:42:41,689 INFO /home/thennarasu/.local/bin/bench clear cahe
+2026-07-30 06:42:47,136 INFO /home/thennarasu/.local/bin/bench clear-cache
+2026-07-30 07:06:06,219 INFO /home/thennarasu/.local/bin/bench clear-cache
+2026-07-30 07:06:10,492 INFO /home/thennarasu/.local/bin/bench build
+2026-07-30 07:10:38,797 INFO /home/thennarasu/.local/bin/bench version
+2026-07-30 08:32:38,668 INFO /home/thennarasu/.local/bin/bench start
+2026-07-30 08:32:39,107 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-30 08:32:39,110 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-30 08:32:39,111 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-30 08:32:39,111 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-30 08:32:39,121 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-31 05:04:24,436 INFO /home/thennarasu/.local/bin/bench start
+2026-07-31 05:04:24,652 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-31 05:04:24,653 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-31 05:04:24,657 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-31 05:04:24,665 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-31 05:04:24,666 INFO /home/thennarasu/.local/bin/bench worker
+2026-07-31 06:00:01,639 INFO /home/thennarasu/.local/bin/bench --verbose --site all backup
+2026-07-31 08:25:59,644 INFO /home/thennarasu/.local/bin/bench start
+2026-07-31 08:26:00,062 INFO /home/thennarasu/.local/bin/bench socketio
+2026-07-31 08:26:00,064 INFO /home/thennarasu/.local/bin/bench watch
+2026-07-31 08:26:00,073 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-07-31 08:26:00,086 INFO /home/thennarasu/.local/bin/bench schedule
+2026-07-31 08:26:00,088 INFO /home/thennarasu/.local/bin/bench worker
+2026-08-01 04:55:35,793 INFO /home/thennarasu/.local/bin/bench start
+2026-08-01 04:55:36,190 INFO /home/thennarasu/.local/bin/bench socketio
+2026-08-01 04:55:36,191 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-08-01 04:55:36,197 INFO /home/thennarasu/.local/bin/bench schedule
+2026-08-01 04:55:36,212 INFO /home/thennarasu/.local/bin/bench watch
+2026-08-01 04:55:36,216 INFO /home/thennarasu/.local/bin/bench worker
+2026-08-01 06:00:02,118 INFO /home/thennarasu/.local/bin/bench --verbose --site all backup
+2026-08-01 08:00:32,065 INFO /home/thennarasu/.local/bin/bench start
+2026-08-01 08:00:32,283 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-08-01 08:00:32,300 INFO /home/thennarasu/.local/bin/bench socketio
+2026-08-01 08:00:32,300 INFO /home/thennarasu/.local/bin/bench watch
+2026-08-01 08:00:32,309 INFO /home/thennarasu/.local/bin/bench schedule
+2026-08-01 08:00:32,313 INFO /home/thennarasu/.local/bin/bench worker
+2026-08-01 12:00:01,472 INFO /home/thennarasu/.local/bin/bench --verbose --site all backup
+2026-08-03 04:47:54,633 INFO /home/thennarasu/.local/bin/bench start
+2026-08-03 04:47:54,981 INFO /home/thennarasu/.local/bin/bench socketio
+2026-08-03 04:47:54,983 INFO /home/thennarasu/.local/bin/bench worker
+2026-08-03 04:47:54,985 INFO /home/thennarasu/.local/bin/bench watch
+2026-08-03 04:47:54,985 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-08-03 04:47:54,987 INFO /home/thennarasu/.local/bin/bench schedule
+2026-08-03 08:23:38,404 INFO /home/thennarasu/.local/bin/bench start
+2026-08-03 08:23:38,792 INFO /home/thennarasu/.local/bin/bench socketio
+2026-08-03 08:23:38,796 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-08-03 08:23:38,799 INFO /home/thennarasu/.local/bin/bench watch
+2026-08-03 08:23:38,817 INFO /home/thennarasu/.local/bin/bench schedule
+2026-08-03 08:23:38,825 INFO /home/thennarasu/.local/bin/bench worker
+2026-08-03 10:24:11,641 INFO /home/thennarasu/.local/bin/bench setup production thennarasu
+2026-08-03 10:24:11,661 DEBUG sudo /home/thennarasu/.local/share/uv/tools/frappe-bench/bin/python -m pip install ansible
+2026-08-03 10:24:11,698 WARNING sudo /home/thennarasu/.local/share/uv/tools/frappe-bench/bin/python -m pip install ansible executed with exit code 1
+2026-08-03 10:24:11,698 WARNING /home/thennarasu/.local/bin/bench setup production thennarasu executed with exit code 1
+2026-08-03 10:25:01,938 INFO /home/thennarasu/.local/bin/bench setup production thennarasu
+2026-08-03 10:25:01,944 DEBUG sudo /home/thennarasu/.local/share/uv/tools/frappe-bench/bin/python -m pip install ansible
+2026-08-03 10:25:30,422 DEBUG bench setup role fail2ban
+2026-08-03 10:25:30,422 WARNING /home/thennarasu/.local/bin/bench setup production thennarasu executed with exit code 1
+2026-08-03 10:26:31,116 INFO /home/thennarasu/.local/bin/bench --version
+2026-08-03 10:27:15,861 INFO /home/thennarasu/.local/bin/bench setup production thennarasu
+2026-08-03 10:27:15,872 DEBUG sudo /home/thennarasu/.local/share/uv/tools/frappe-bench/bin/python -m pip install ansible
+2026-08-03 10:27:16,510 DEBUG bench setup role fail2ban
+2026-08-03 10:27:16,670 INFO /usr/local/bin/bench setup role fail2ban
+2026-08-03 10:27:16,674 WARNING /usr/local/bin/bench setup role fail2ban executed with exit code 1
+2026-08-03 10:27:16,932 WARNING bench setup role fail2ban executed with exit code 1
+2026-08-03 10:27:16,933 WARNING /home/thennarasu/.local/bin/bench setup production thennarasu executed with exit code 1
+2026-08-03 10:27:38,409 INFO /home/thennarasu/.local/bin/bench setup role fail2ban
+2026-08-03 10:27:38,409 WARNING superuser privileges required for this command
+2026-08-03 10:29:59,000 INFO /usr/local/bin/bench setup role fail2ban
+2026-08-03 10:29:59,004 WARNING /usr/local/bin/bench setup role fail2ban executed with exit code 1
+2026-08-03 10:31:38,986 INFO /home/thennarasu/.local/bin/bench --site library.local version
+2026-08-03 10:34:50,078 INFO /home/thennarasu/.local/bin/bench setup production thennarasu
+2026-08-03 10:34:50,084 DEBUG bench setup role fail2ban
+2026-08-03 10:34:50,232 INFO /usr/local/bin/bench setup role fail2ban
+2026-08-03 10:35:05,835 DEBUG bench setup role nginx
+2026-08-03 10:35:05,961 INFO /usr/local/bin/bench setup role nginx
+2026-08-03 10:35:17,106 WARNING /usr/local/bin/bench setup role nginx executed with exit code 1
+2026-08-03 10:35:17,322 WARNING bench setup role nginx executed with exit code 1
+2026-08-03 10:35:17,323 WARNING /home/thennarasu/.local/bin/bench setup production thennarasu executed with exit code 1
+2026-08-03 10:38:13,570 INFO /home/thennarasu/.local/bin/bench setup production thennarasu
+2026-08-03 10:38:13,579 DEBUG bench setup role supervisor
+2026-08-03 10:38:13,725 INFO /usr/local/bin/bench setup role supervisor
+2026-08-03 10:38:24,166 LOG Updated supervisord.conf: 'chmod' changed from '0700                       ; sockef file mode (default 0700)' to '0760'
+2026-08-03 10:38:24,166 LOG Updated supervisord.conf: 'chown' changed from '' to 'thennarasu:thennarasu'
+2026-08-03 10:38:24,250 DEBUG sudo /usr/sbin/nginx -t
+2026-08-03 10:38:24,266 DEBUG sudo systemctl reload nginx
+2026-08-03 10:42:40,487 INFO /home/thennarasu/.local/bin/bench start
+2026-08-03 10:42:40,922 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-08-03 10:42:40,925 INFO /home/thennarasu/.local/bin/bench socketio
+2026-08-03 10:42:40,928 INFO /home/thennarasu/.local/bin/bench watch
+2026-08-03 10:42:40,932 INFO /home/thennarasu/.local/bin/bench worker
+2026-08-03 10:42:40,933 INFO /home/thennarasu/.local/bin/bench schedule
+2026-08-03 12:00:01,831 INFO /home/thennarasu/.local/bin/bench --verbose --site all backup
+2026-08-04 05:03:03,313 INFO /home/thennarasu/.local/bin/bench start
+2026-08-04 05:03:03,765 INFO /home/thennarasu/.local/bin/bench watch
+2026-08-04 05:03:03,779 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-08-04 05:03:03,782 INFO /home/thennarasu/.local/bin/bench schedule
+2026-08-04 05:03:03,786 INFO /home/thennarasu/.local/bin/bench socketio
+2026-08-04 05:03:03,796 INFO /home/thennarasu/.local/bin/bench worker
+2026-08-04 06:00:01,909 INFO /home/thennarasu/.local/bin/bench --verbose --site all backup
+2026-08-04 06:42:55,086 INFO /home/thennarasu/.local/bin/bench console
+2026-08-04 06:44:39,314 INFO /home/thennarasu/.local/bin/bench --site library.local console
+2026-08-04 06:47:22,745 INFO /home/thennarasu/.local/bin/bench --site library.local clear-cache
+2026-08-04 06:50:15,625 INFO /home/thennarasu/.local/bin/bench --site library.local console
+2026-08-04 07:07:30,500 INFO /home/thennarasu/.local/bin/bench console
+2026-08-04 08:09:31,651 INFO /home/thennarasu/.local/bin/bench start
+2026-08-04 08:09:32,036 INFO /home/thennarasu/.local/bin/bench socketio
+2026-08-04 08:09:32,045 INFO /home/thennarasu/.local/bin/bench schedule
+2026-08-04 08:09:32,047 INFO /home/thennarasu/.local/bin/bench watch
+2026-08-04 08:09:32,049 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-08-04 08:09:32,058 INFO /home/thennarasu/.local/bin/bench worker
+2026-08-04 10:05:17,974 INFO /home/thennarasu/.local/bin/bench restart
+2026-08-04 10:05:21,166 DEBUG cd /home/thennarasu/new-bench && sudo supervisorctl restart frappe:
+2026-08-04 10:05:21,329 WARNING cd /home/thennarasu/new-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2026-08-04 10:05:21,329 WARNING /home/thennarasu/.local/bin/bench restart executed with exit code 1
+2026-08-04 10:05:29,594 INFO /home/thennarasu/.local/bin/bench build
+2026-08-04 10:07:01,216 INFO /home/thennarasu/.local/bin/bench start
+2026-08-04 10:07:01,676 INFO /home/thennarasu/.local/bin/bench watch
+2026-08-04 10:07:01,677 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-08-04 10:07:01,679 INFO /home/thennarasu/.local/bin/bench schedule
+2026-08-04 10:07:01,688 INFO /home/thennarasu/.local/bin/bench worker
+2026-08-04 10:07:01,692 INFO /home/thennarasu/.local/bin/bench socketio
+2026-08-05 05:08:25,059 INFO /home/thennarasu/.local/bin/bench start
+2026-08-05 05:08:25,472 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-08-05 05:08:25,472 INFO /home/thennarasu/.local/bin/bench socketio
+2026-08-05 05:08:25,472 INFO /home/thennarasu/.local/bin/bench watch
+2026-08-05 05:08:25,479 INFO /home/thennarasu/.local/bin/bench schedule
+2026-08-05 05:08:25,505 INFO /home/thennarasu/.local/bin/bench worker
+2026-08-05 08:34:54,628 INFO /home/thennarasu/.local/bin/bench start
+2026-08-05 08:34:55,036 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-08-05 08:34:55,037 INFO /home/thennarasu/.local/bin/bench watch
+2026-08-05 08:34:55,044 INFO /home/thennarasu/.local/bin/bench socketio
+2026-08-05 08:34:55,045 INFO /home/thennarasu/.local/bin/bench worker
+2026-08-05 08:34:55,052 INFO /home/thennarasu/.local/bin/bench schedule
+2026-08-05 12:00:01,341 INFO /home/thennarasu/.local/bin/bench --verbose --site all backup
+2026-08-06 04:49:06,784 INFO /home/thennarasu/.local/bin/bench start
+2026-08-06 04:49:07,022 INFO /home/thennarasu/.local/bin/bench socketio
+2026-08-06 04:49:07,023 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-08-06 04:49:07,034 INFO /home/thennarasu/.local/bin/bench worker
+2026-08-06 04:49:07,036 INFO /home/thennarasu/.local/bin/bench watch
+2026-08-06 04:49:07,043 INFO /home/thennarasu/.local/bin/bench schedule
+2026-08-06 05:11:08,154 INFO /home/thennarasu/.local/bin/bench build
+2026-08-06 05:29:25,090 INFO /home/thennarasu/.local/bin/bench start
+2026-08-06 05:29:25,319 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-08-06 05:29:25,323 INFO /home/thennarasu/.local/bin/bench socketio
+2026-08-06 05:29:25,328 INFO /home/thennarasu/.local/bin/bench watch
+2026-08-06 05:29:25,336 INFO /home/thennarasu/.local/bin/bench schedule
+2026-08-06 05:29:25,340 INFO /home/thennarasu/.local/bin/bench worker
+2026-08-06 05:35:18,237 INFO /home/thennarasu/.local/bin/bench build
+2026-08-06 06:00:01,537 INFO /home/thennarasu/.local/bin/bench --verbose --site all backup
+2026-08-06 06:36:39,183 INFO /home/thennarasu/.local/bin/bench build
+2026-08-06 08:35:44,582 INFO /home/thennarasu/.local/bin/bench start
+2026-08-06 08:35:44,941 INFO /home/thennarasu/.local/bin/bench socketio
+2026-08-06 08:35:44,951 INFO /home/thennarasu/.local/bin/bench watch
+2026-08-06 08:35:44,953 INFO /home/thennarasu/.local/bin/bench worker
+2026-08-06 08:35:44,973 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-08-06 08:35:44,975 INFO /home/thennarasu/.local/bin/bench schedule
+2026-08-06 13:21:25,969 INFO /home/thennarasu/.local/bin/bench start
+2026-08-06 13:21:26,369 INFO /home/thennarasu/.local/bin/bench socketio
+2026-08-06 13:21:26,369 INFO /home/thennarasu/.local/bin/bench schedule
+2026-08-06 13:21:26,370 INFO /home/thennarasu/.local/bin/bench worker
+2026-08-06 13:21:26,371 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-08-06 13:21:26,388 INFO /home/thennarasu/.local/bin/bench watch
+2026-08-07 05:02:30,799 INFO /home/thennarasu/.local/bin/bench start
+2026-08-07 05:02:31,026 INFO /home/thennarasu/.local/bin/bench serve --port 8000
+2026-08-07 05:02:31,027 INFO /home/thennarasu/.local/bin/bench socketio
+2026-08-07 05:02:31,028 INFO /home/thennarasu/.local/bin/bench watch
+2026-08-07 05:02:31,028 INFO /home/thennarasu/.local/bin/bench schedule
+2026-08-07 05:02:31,038 INFO /home/thennarasu/.local/bin/bench worker
+2026-08-07 06:00:02,219 INFO /home/thennarasu/.local/bin/bench --verbose --site all backup

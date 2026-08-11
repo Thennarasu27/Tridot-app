@@ -1,0 +1,22 @@
+2026-07-23 09:32:58,885 INFO ipython === bench console session ===
+2026-07-23 09:32:58,888 INFO ipython for f in frappe.get_meta("Student Record").fields:
+    print(f.label, f.fieldname, f.fieldtype)
+    
+2026-07-23 09:32:58,888 INFO ipython print("hello")
+2026-07-23 09:32:58,888 INFO ipython === session end ===
+2026-07-29 06:43:04,497 INFO ipython === bench console session ===
+2026-07-29 06:43:04,499 INFO ipython doc1 = frappe.get_doc("Books",4);
+2026-07-29 06:43:04,499 INFO ipython doc1.bname
+2026-07-29 06:43:04,499 INFO ipython frappe.delete_doc("Books",4);
+2026-07-29 06:43:04,499 INFO ipython doc1 = frappe.get_doc("Books",4);
+2026-07-29 06:43:04,499 INFO ipython === session end ===
+2026-08-04 06:44:22,251 INFO ipython === bench console session ===
+2026-08-04 06:44:22,256 INFO ipython frappe.get_hooks("test_string");
+2026-08-04 06:44:22,256 INFO ipython === session end ===
+2026-08-04 06:47:20,595 INFO ipython === bench console session ===
+2026-08-04 06:47:20,595 INFO ipython frappe.get_hooks("test_string");
+2026-08-04 06:47:20,596 INFO ipython print(frappe.get_hooks("test_string");)
+2026-08-04 06:47:20,596 INFO ipython === session end ===
+2026-08-04 07:07:25,607 INFO ipython === bench console session ===
+2026-08-04 07:07:25,608 INFO ipython frappe.get_hooks("test_string");
+2026-08-04 07:07:25,608 INFO ipython === session end ===

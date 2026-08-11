@@ -1,0 +1,6 @@
+2026-07-23 09:32:58,885 INFO ipython === bench console session ===
+2026-07-23 09:32:58,888 INFO ipython for f in frappe.get_meta("Student Record").fields:
+    print(f.label, f.fieldname, f.fieldtype)
+    
+2026-07-23 09:32:58,888 INFO ipython print("hello")
+2026-07-23 09:32:58,888 INFO ipython === session end ===

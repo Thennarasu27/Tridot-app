@@ -1,0 +1,6 @@
+frappe
+education
+school_management
+practice_app
+vehicle
+library_management

@@ -1,0 +1,12 @@
+{
+ "db_name": "_e3de23dabe070975",
+ "db_password": "ZoAg2AGlD9iZ5FXr",
+ "db_type": "mariadb",
+ "db_user": "_e3de23dabe070975",
+ "developer_mode": 1,
+ "installed_apps": [
+  "frappe",
+  "school_management",
+  "vehicle"
+ ]
+}

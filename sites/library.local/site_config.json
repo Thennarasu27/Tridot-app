@@ -1,0 +1,13 @@
+{
+ "db_name": "_790e3cbedbf5b420",
+ "db_password": "fqtVf7DmIePTiezm",
+ "db_type": "mariadb",
+ "db_user": "_790e3cbedbf5b420",
+ "developer_mode": 1,
+ "encryption_key": "0yKyj9r5CJ7uiiVOKDPAfYWEKcDrLtzj6b6O1C_35dI=",
+ "installed_apps": [
+  "frappe",
+  "library_management",
+  "practice_app"
+ ]
+}

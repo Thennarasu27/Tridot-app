@@ -1,0 +1,471 @@
+2026-07-31 06:37:24,404 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': '{"name":"Employee Management","owner":"Administrator","creation":"2026-07-31 10:35:09.880248","modified":"2026-07-31 11:50:49.626857","modified_by":"Administrator","docstatus":0,"idx":0,"read_only":0,"in_create":0,"protect_attached_files":0,"naming_rule":"Autoincrement","allow_rename":1,"module":"Library-Tech","is_submittable":0,"istable":0,"issingle":0,"is_tree":0,"is_calendar_and_gantt":0,"editable_grid":0,"quick_entry":0,"grid_page_length":50,"rows_threshold_for_grid_search":20,"allow_bulk_edit":1,"track_changes":0,"track_seen":0,"track_views":0,"custom":0,"beta":0,"is_virtual":0,"queue_in_background":0,"max_attachments":0,"hide_toolbar":0,"allow_copy":0,"allow_import":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"show_title_field_in_link":0,"translated_doctype":0,"sort_field":"creation","sort_order":"DESC","force_re_route_to_default_view":0,"document_type":"","show_preview_popup":0,"show_name_in_global_search":0,"email_append_to":0,"has_web_view":0,"allow_guest_to_view":0,"index_web_pages_for_search":1,"engine":"InnoDB","row_format":"Dynamic","doctype":"DocType","fields":[{"name":"kb0qif96dl","owner":"Administrator","creation":"2026-07-31 10:35:09.880248","modified":"2026-07-31 11:50:49.626857","modified_by":"Administrator","docstatus":0,"idx":1,"label":"Id","fieldtype":"Data","fieldname":"id","length":0,"precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"mask":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"button_color":"","hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"alignment":"","columns":0,"show_description_on_click":0,"parent":"Employee Management","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"kb0dcepn0n","owner":"Administrator","creation":"2026-07-31 10:35:09.880248","modified":"2026-07-31 11:50:49.626857","modified_by":"Administrator","docstatus":0,"idx":2,"label":"Name","fieldtype":"Data","fieldname":"name1","length":0,"precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"mask":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"button_color":"","hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"alignment":"","columns":0,"show_description_on_click":0,"parent":"Employee Management","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"kb041rmqc0","owner":"Administrator","creation":"2026-07-31 10:35:09.880248","modified":"2026-07-31 11:50:49.626857","modified_by":"Administrator","docstatus":0,"idx":3,"label":"Email","fieldtype":"Data","fieldname":"email","length":0,"precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"mask":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"button_color":"","hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"alignment":"","columns":0,"show_description_on_click":0,"parent":"Employee Management","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"kb09gd5vqk","owner":"Administrator","creation":"2026-07-31 10:35:09.880248","modified":"2026-07-31 11:50:49.626857","modified_by":"Administrator","docstatus":0,"idx":4,"label":"Phone","fieldtype":"Phone","fieldname":"phone","length":0,"precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"mask":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"button_color":"","hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"alignment":"","columns":0,"show_description_on_click":0,"parent":"Employee Management","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"kb0pi0n8sh","owner":"Administrator","creation":"2026-07-31 10:35:09.880248","modified":"2026-07-31 11:50:49.626857","modified_by":"Administrator","docstatus":0,"idx":5,"label":"Dob","fieldtype":"Date","fieldname":"dob","length":0,"precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"mask":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"button_color":"","hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"alignment":"","columns":0,"show_description_on_click":0,"parent":"Employee Management","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"kb0hs8h1bu","owner":"Administrator","creation":"2026-07-31 10:35:09.880248","modified":"2026-07-31 11:50:49.626857","modified_by":"Administrator","docstatus":0,"idx":6,"label":"Joining","fieldtype":"Datetime","fieldname":"joining","length":0,"precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"mask":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"button_color":"","hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"alignment":"","columns":0,"show_description_on_click":0,"parent":"Employee Management","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"kb0773brf0","owner":"Administrator","creation":"2026-07-31 10:35:09.880248","modified":"2026-07-31 11:50:49.626857","modified_by":"Administrator","docstatus":0,"idx":7,"label":"Department","fieldtype":"Select","fieldname":"department","length":0,"precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"mask":0,"options":"HR\\nIT\\nSALES\\nFINANCE","sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"button_color":"","hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"alignment":"","columns":0,"show_description_on_click":0,"parent":"Employee Management","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"kb0214hrbl","owner":"Administrator","creation":"2026-07-31 10:35:09.880248","modified":"2026-07-31 11:50:49.626857","modified_by":"Administrator","docstatus":0,"idx":8,"label":"Designation","fieldtype":"Data","fieldname":"designation","length":0,"precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"mask":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"button_color":"","hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"alignment":"","columns":0,"show_description_on_click":0,"parent":"Employee Management","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"kb09f1mi48","owner":"Administrator","creation":"2026-07-31 10:35:09.880248","modified":"2026-07-31 11:50:49.626857","modified_by":"Administrator","docstatus":0,"idx":9,"label":"Salary","fieldtype":"Currency","fieldname":"salary","length":0,"precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"mask":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"button_color":"","hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"alignment":"","columns":0,"show_description_on_click":0,"parent":"Employee Management","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"kb0le1bijr","owner":"Administrator","creation":"2026-07-31 10:35:09.880248","modified":"2026-07-31 11:50:49.626857","modified_by":"Administrator","docstatus":0,"idx":10,"label":"Bonus","fieldtype":"Currency","fieldname":"bonus","length":0,"precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"mask":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"button_color":"","hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"alignment":"","columns":0,"show_description_on_click":0,"parent":"Employee Management","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"kb0gi6nf8l","owner":"Administrator","creation":"2026-07-31 10:35:09.880248","modified":"2026-07-31 11:50:49.626857","modified_by":"Administrator","docstatus":0,"idx":11,"label":"Total Salary","fieldtype":"Currency","fieldname":"total_salary","length":0,"precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"mask":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"button_color":"","hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":1,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"alignment":"","columns":0,"show_description_on_click":0,"parent":"Employee Management","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"kb0qtg0kce","owner":"Administrator","creation":"2026-07-31 10:35:09.880248","modified":"2026-07-31 11:50:49.626857","modified_by":"Administrator","docstatus":0,"idx":12,"label":"Experience","fieldtype":"Int","fieldname":"experience","length":0,"precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"mask":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"button_color":"","hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"alignment":"","columns":0,"show_description_on_click":0,"parent":"Employee Management","parentfield":"fields","parenttype":"DocType","doctype":"DocField"},{"name":"kb0v8jifij","owner":"Administrator","creation":"2026-07-31 10:35:09.880248","modified":"2026-07-31 11:50:49.626857","modified_by":"Administrator","docstatus":0,"idx":13,"label":"Active","fieldtype":"Check","fieldname":"active","length":0,"precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"mask":0,"sort_options":0,"show_dashboard":0,"default":"0","fetch_if_empty":0,"button_color":"","hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"alignment":"","columns":0,"show_description_on_click":0,"parent":"Employee Management","parentfield":"fields","parenttype":"DocType","doctype":"DocField"}],"permissions":[{"name":"ghqj1pk7nk","owner":"Administrator","creation":"2026-07-31 10:35:09.880248","modified":"2026-07-31 11:50:49.626857","modified_by":"Administrator","docstatus":0,"idx":1,"role":"System Manager","if_owner":0,"permlevel":0,"select":0,"read":1,"write":1,"create":1,"delete":1,"submit":0,"cancel":0,"amend":0,"mask":0,"report":1,"export":1,"import":0,"share":1,"print":1,"email":1,"impersonate":0,"parent":"Employee Management","parentfield":"permissions","parenttype":"DocType","doctype":"DocPerm"}],"actions":[],"links":[],"states":[],"autoname":"autoincrement","__unsaved":1,"title_field":"name1"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2026-08-01 06:18:33,232 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': '{"name":"Projectsemp","owner":"Administrator","creation":"2026-08-01 11:47:25.923009","modified":"2026-08-01 11:47:25.923009","modified_by":"Administrator","docstatus":0,"idx":0,"read_only":0,"in_create":0,"protect_attached_files":0,"naming_rule":"","allow_rename":1,"module":"Library-Tech","is_submittable":0,"istable":1,"issingle":0,"is_tree":0,"is_calendar_and_gantt":0,"editable_grid":1,"quick_entry":0,"grid_page_length":50,"rows_threshold_for_grid_search":20,"allow_bulk_edit":1,"track_changes":0,"track_seen":0,"track_views":0,"custom":0,"beta":0,"is_virtual":0,"queue_in_background":0,"max_attachments":0,"hide_toolbar":0,"allow_copy":0,"allow_import":0,"allow_events_in_timeline":0,"allow_auto_repeat":0,"make_attachments_public":0,"show_title_field_in_link":0,"translated_doctype":0,"sort_field":"creation","sort_order":"DESC","force_re_route_to_default_view":0,"document_type":"","show_preview_popup":0,"show_name_in_global_search":0,"email_append_to":0,"has_web_view":0,"allow_guest_to_view":0,"index_web_pages_for_search":1,"engine":"InnoDB","row_format":"Dynamic","doctype":"DocType","fields":[{"docstatus":0,"doctype":"DocField","name":"new-docfield-omoymzjseq","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Data","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"mask":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"button_color":"","hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"alignment":"","show_description_on_click":0,"parent":"Projectsemp","parentfield":"fields","parenttype":"DocType","idx":1,"__run_link_triggers":1,"fieldname":"pro-1","label":"pro-1"},{"docstatus":0,"doctype":"DocField","name":"new-docfield-dijnhsjuqx","__islocal":1,"__unsaved":1,"owner":"Administrator","fieldtype":"Data","precision":"","non_negative":0,"hide_days":0,"hide_seconds":0,"reqd":0,"is_virtual":0,"search_index":0,"not_nullable":0,"mask":0,"sort_options":0,"show_dashboard":0,"fetch_if_empty":0,"button_color":"","hidden":0,"show_on_timeline":0,"bold":0,"allow_in_quick_entry":0,"translatable":0,"print_hide":0,"print_hide_if_no_value":0,"report_hide":0,"collapsible":0,"hide_border":0,"in_list_view":0,"in_standard_filter":0,"in_preview":0,"sticky":0,"in_filter":0,"in_global_search":0,"read_only":0,"allow_on_submit":0,"ignore_user_permissions":0,"allow_bulk_edit":0,"make_attachment_public":0,"permlevel":0,"ignore_xss_filter":0,"unique":0,"no_copy":0,"set_only_once":0,"remember_last_selected_value":0,"alignment":"","show_description_on_click":0,"parent":"Projectsemp","parentfield":"fields","parenttype":"DocType","idx":2,"__run_link_triggers":1,"fieldname":"pro-2","label":"pro-2"}],"permissions":[],"actions":[],"links":[],"states":[],"__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2026-08-01 06:23:12,599 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': '{"doctype":"DocType","name":"Projectsemp","module":"Library-Tech","istable":1,"editable_grid":1,"custom":0,"is_virtual":0,"permissions":[{"create":1,"delete":1,"email":1,"export":1,"print":1,"read":1,"report":1,"role":"System Manager","share":1,"write":1,"submit":0}],"fields":[{"fieldtype":"Section Break"}]}', 'cmd': 'frappe.client.insert'}
+2026-08-01 10:08:55,147 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'cmd': 'undefined.library-tech.doctype.employee_management.employee_management.say_hello'}
+2026-08-01 11:57:12,522 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-01 11:57:48,368 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-01 11:57:54,941 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-01 11:58:29,572 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-01 11:58:30,653 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-01 11:59:54,030 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-01 12:46:27,242 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-01 12:47:02,097 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-01 12:47:12,905 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-01 12:56:04,457 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":8,"owner":"Administrator","creation":"2026-08-01 18:24:10.291203","modified":"2026-08-01 18:24:10.291203","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"check1","department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[],"__last_sync_on":"2026-08-01T12:56:02.419Z"}', 'method': 'func', 'cmd': 'run_doc_method'}
+2026-08-01 12:56:26,112 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":8,"owner":"Administrator","creation":"2026-08-01 18:24:10.291203","modified":"2026-08-01 18:24:10.291203","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"check1","department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[],"__last_sync_on":"2026-08-01T12:56:02.419Z"}', 'method': 'func', 'cmd': 'run_doc_method'}
+2026-08-01 12:58:59,761 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":6,"owner":"Administrator","creation":"2026-08-01 13:42:18.791121","modified":"2026-08-01 13:42:18.791121","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"HRLLO","department":"HR","designation":"hello","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[]}', 'method': 'func', 'cmd': 'run_doc_method'}
+2026-08-01 13:00:34,793 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":6,"owner":"Administrator","creation":"2026-08-01 13:42:18.791121","modified":"2026-08-01 13:42:18.791121","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"HRLLO","department":"HR","designation":"hello","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[]}', 'method': 'func', 'cmd': 'run_doc_method'}
+2026-08-01 13:13:00,162 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":6,"owner":"Administrator","creation":"2026-08-01 13:42:18.791121","modified":"2026-08-01 13:42:18.791121","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"HRLLO","department":"HR","designation":"hello","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[]}', 'method': 'func', 'cmd': 'run_doc_method'}
+2026-08-01 13:13:22,503 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":6,"owner":"Administrator","creation":"2026-08-01 13:42:18.791121","modified":"2026-08-01 13:42:18.791121","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"HRLLO","department":"HR","designation":"hello","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[]}', 'method': 'func', 'cmd': 'run_doc_method'}
+2026-08-01 13:13:26,663 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-01 13:13:31,678 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-01 13:14:43,174 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-01 13:15:06,566 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-03 05:05:16,699 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-03 05:05:21,852 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-03 05:06:25,540 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-03 05:15:37,443 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"User","name":"new-user-holaaxhmuw","__islocal":1,"__unsaved":1,"owner":"Administrator","enabled":1,"language":"en","send_welcome_email":1,"unsubscribed":0,"role_profiles":[{"role_profile":"test"}],"roles":[],"block_modules":[],"mute_sounds":0,"desk_theme":"Light","code_editor_type":"vscode","search_bar":1,"notifications":1,"list_sidebar":1,"bulk_actions":1,"view_switcher":1,"form_sidebar":1,"form_navigation_buttons":1,"timeline":1,"dashboard":1,"show_absolute_datetime_in_timeline":0,"logout_all_sessions":1,"document_follow_notify":0,"document_follow_frequency":"Daily","follow_created_documents":0,"follow_commented_documents":0,"follow_liked_documents":0,"follow_assigned_documents":0,"follow_shared_documents":0,"thread_notify":1,"send_me_a_copy":0,"allowed_in_mentions":1,"user_emails":[],"defaults":[],"simultaneous_sessions":2,"user_type":"System User","bypass_restrict_ip_check_if_2fa_enabled":0,"social_logins":[],"onboarding_status":"{}","active_sessions":[],"__run_link_triggers":1,"email":"example@gmail.com","first_name":"test"}', 'cmd': 'frappe.client.save'}
+2026-08-03 05:27:09,041 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":3,"owner":"Administrator","creation":"2026-08-01 11:25:05.949455","modified":"2026-08-01 11:26:21.725090","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"Thennarasu M","department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[],"__last_sync_on":"2026-08-03T05:27:08.567Z"}', 'method': 'onlyfor', 'cmd': 'run_doc_method'}
+2026-08-03 05:27:29,572 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":3,"owner":"Administrator","creation":"2026-08-01 11:25:05.949455","modified":"2026-08-01 11:26:21.725090","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"Thennarasu M","department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[],"__last_sync_on":"2026-08-03T05:27:27.403Z"}', 'method': 'getdocs', 'cmd': 'run_doc_method'}
+2026-08-03 05:28:26,675 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":3,"owner":"Administrator","creation":"2026-08-01 11:25:05.949455","modified":"2026-08-01 11:26:21.725090","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"Thennarasu M","department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[],"__last_sync_on":"2026-08-03T05:28:25.142Z"}', 'method': 'getdocs', 'cmd': 'run_doc_method'}
+2026-08-03 05:29:43,640 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":3,"owner":"Administrator","creation":"2026-08-01 11:25:05.949455","modified":"2026-08-01 11:26:21.725090","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"Thennarasu M","department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[],"__last_sync_on":"2026-08-03T05:29:41.736Z"}', 'method': 'getdocs', 'cmd': 'run_doc_method'}
+2026-08-03 05:30:05,076 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":3,"owner":"Administrator","creation":"2026-08-01 11:25:05.949455","modified":"2026-08-01 11:26:21.725090","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"Thennarasu M","department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[],"__last_sync_on":"2026-08-03T05:30:03.685Z"}', 'method': 'getdocs', 'cmd': 'run_doc_method'}
+2026-08-03 05:31:54,304 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":3,"owner":"Administrator","creation":"2026-08-01 11:25:05.949455","modified":"2026-08-01 11:26:21.725090","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"Thennarasu M","department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[],"__last_sync_on":"2026-08-03T05:31:52.405Z"}', 'method': 'getdocs', 'cmd': 'run_doc_method'}
+2026-08-03 06:02:11,841 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'name': '7', 'cmd': 'frappe.desk.form.load.getdoc'}
+2026-08-03 06:02:32,391 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'name': '7', 'cmd': 'frappe.desk.form.load.getdoc'}
+2026-08-03 06:03:12,402 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'name': '7', 'cmd': 'frappe.desk.form.load.getdoc'}
+2026-08-03 06:06:05,342 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":7,"owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-01 14:23:34.328086","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"thekkkkk","department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[]}', 'method': 'updates', 'cmd': 'run_doc_method'}
+2026-08-03 06:48:59,587 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":7,"owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 11:36:03.766178","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"Changed","department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[],"__last_sync_on":"2026-08-03T06:48:57.740Z"}', 'method': 'updates', 'cmd': 'run_doc_method'}
+2026-08-03 06:57:22,690 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-03 06:59:27,834 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-03 07:03:32,184 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-03 07:04:00,931 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-03 07:04:22,175 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-03 07:09:56,499 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-03 07:15:54,060 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': '{"name":7,"owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:43:27.357444","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"developerf","department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[],"__last_sync_on":"2026-08-03T07:15:48.977Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2026-08-03 07:19:35,395 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":7,"owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:43:27.357444","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"developer","department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[]}', 'method': 'func1', 'cmd': 'run_doc_method'}
+2026-08-03 07:24:12,347 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":7,"owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:54:04.691841","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"nu","department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[{"name":"56eqbe4bmg","owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:54:04.691841","modified_by":"Administrator","docstatus":0,"idx":1,"pro1":"a1","pro2":"a2","parent":7,"parentfield":"table1","parenttype":"Employee Management","doctype":"Projectsemp"}]}', 'method': 'func1', 'cmd': 'run_doc_method'}
+2026-08-03 07:25:07,413 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":7,"owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:54:11.515055","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"nu","department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[{"name":"56eqbe4bmg","owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:54:11.515055","modified_by":"Administrator","docstatus":0,"idx":1,"pro1":"a1","pro2":"a2","parent":7,"parentfield":"table1","parenttype":"Employee Management","doctype":"Projectsemp"},{"name":"58jfpjomn8","owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:54:11.515055","modified_by":"Administrator","docstatus":0,"idx":2,"pro1":"a1","pro2":"a2","parent":7,"parentfield":"table1","parenttype":"Employee Management","doctype":"Projectsemp"}]}', 'method': 'func1', 'cmd': 'run_doc_method'}
+2026-08-03 07:28:20,788 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-03 08:30:15,862 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":7,"owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"dbset","department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[{"name":"56eqbe4bmg","owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":1,"pro1":"a1","pro2":"a2","parent":7,"parentfield":"table1","parenttype":"Employee Management","doctype":"Projectsemp"},{"name":"58jfpjomn8","owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":2,"pro1":"a1","pro2":"a2","parent":7,"parentfield":"table1","parenttype":"Employee Management","doctype":"Projectsemp"}],"__last_sync_on":"2026-08-03T08:30:14.133Z"}', 'method': 'func2', 'cmd': 'run_doc_method'}
+2026-08-03 08:30:40,100 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":7,"owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"dbset","department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[{"name":"56eqbe4bmg","owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":1,"pro1":"a1","pro2":"a2","parent":7,"parentfield":"table1","parenttype":"Employee Management","doctype":"Projectsemp"},{"name":"58jfpjomn8","owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":2,"pro1":"a1","pro2":"a2","parent":7,"parentfield":"table1","parenttype":"Employee Management","doctype":"Projectsemp"}],"__last_sync_on":"2026-08-03T08:30:37.177Z"}', 'method': 'func2', 'cmd': 'run_doc_method'}
+2026-08-03 08:30:52,695 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":7,"owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"dbset","department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[{"name":"56eqbe4bmg","owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":1,"pro1":"a1","pro2":"a2","parent":7,"parentfield":"table1","parenttype":"Employee Management","doctype":"Projectsemp"},{"name":"58jfpjomn8","owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":2,"pro1":"a1","pro2":"a2","parent":7,"parentfield":"table1","parenttype":"Employee Management","doctype":"Projectsemp"}],"__last_sync_on":"2026-08-03T08:30:50.582Z"}', 'method': 'func2', 'cmd': 'run_doc_method'}
+2026-08-03 08:42:43,755 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":7,"owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"dbset","department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[{"name":"56eqbe4bmg","owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":1,"pro1":"a1","pro2":"a2","parent":7,"parentfield":"table1","parenttype":"Employee Management","doctype":"Projectsemp"},{"name":"58jfpjomn8","owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":2,"pro1":"a1","pro2":"a2","parent":7,"parentfield":"table1","parenttype":"Employee Management","doctype":"Projectsemp"}],"_user_tags":"Important","__last_sync_on":"2026-08-03T08:42:41.779Z"}', 'method': 'func2', 'cmd': 'run_doc_method'}
+2026-08-03 08:44:21,099 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":7,"owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"dbset","department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[{"name":"56eqbe4bmg","owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":1,"pro1":"a1","pro2":"a2","parent":7,"parentfield":"table1","parenttype":"Employee Management","doctype":"Projectsemp"},{"name":"58jfpjomn8","owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":2,"pro1":"a1","pro2":"a2","parent":7,"parentfield":"table1","parenttype":"Employee Management","doctype":"Projectsemp"}],"_user_tags":"Important","__last_sync_on":"2026-08-03T08:44:19.177Z"}', 'method': 'runmethod', 'cmd': 'run_doc_method'}
+2026-08-03 08:44:48,189 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":7,"owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"dbset","department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[{"name":"56eqbe4bmg","owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":1,"pro1":"a1","pro2":"a2","parent":7,"parentfield":"table1","parenttype":"Employee Management","doctype":"Projectsemp"},{"name":"58jfpjomn8","owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":2,"pro1":"a1","pro2":"a2","parent":7,"parentfield":"table1","parenttype":"Employee Management","doctype":"Projectsemp"}],"_user_tags":"Important","__last_sync_on":"2026-08-03T08:44:46.926Z"}', 'method': 'runmethod', 'cmd': 'run_doc_method'}
+2026-08-03 08:49:26,761 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'parent', 'docname': 'mspnd6tdbu', 'name': 'child1', 'enqueue': 'true', 'merge': '1', 'freeze': 'true', 'freeze_message': 'Updating related fields...', 'cmd': 'frappe.model.rename_doc.update_document_title'}
+2026-08-03 09:01:31,428 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":7,"owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"dbset","department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[{"name":"56eqbe4bmg","owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":1,"pro1":"a1","pro2":"a2","parent":7,"parentfield":"table1","parenttype":"Employee Management","doctype":"Projectsemp"},{"name":"58jfpjomn8","owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":2,"pro1":"a1","pro2":"a2","parent":7,"parentfield":"table1","parenttype":"Employee Management","doctype":"Projectsemp"}],"_user_tags":"Important","__last_sync_on":"2026-08-03T09:01:28.529Z"}', 'method': 'runmethod', 'cmd': 'run_doc_method'}
+2026-08-03 09:01:55,233 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":7,"owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"dbset","department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[{"name":"56eqbe4bmg","owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":1,"pro1":"a1","pro2":"a2","parent":7,"parentfield":"table1","parenttype":"Employee Management","doctype":"Projectsemp"},{"name":"58jfpjomn8","owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":2,"pro1":"a1","pro2":"a2","parent":7,"parentfield":"table1","parenttype":"Employee Management","doctype":"Projectsemp"}],"_user_tags":"Important","__last_sync_on":"2026-08-03T09:01:53.082Z"}', 'method': 'parent', 'cmd': 'run_doc_method'}
+2026-08-03 09:05:55,013 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': '0q2i1jjho1', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-03 09:06:09,975 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': '0q2i1jjho1', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-03 09:21:23,467 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'view', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-03 09:22:18,679 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'view', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-03 09:22:28,487 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'view', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-03 09:22:44,136 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'view', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-03 09:22:47,317 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'ad9q6kn3h7', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-03 09:23:06,592 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'view', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-03 09:23:12,547 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'ad9q6kn3h7', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-03 09:23:28,845 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'view', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-03 09:23:32,507 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'asnq7pskhs', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-03 09:23:35,103 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'ad9q6kn3h7', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-03 09:28:06,479 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":7,"owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"dbset","department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[{"name":"56eqbe4bmg","owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":1,"pro1":"a1","pro2":"a2","parent":7,"parentfield":"table1","parenttype":"Employee Management","doctype":"Projectsemp"},{"name":"58jfpjomn8","owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":2,"pro1":"a1","pro2":"a2","parent":7,"parentfield":"table1","parenttype":"Employee Management","doctype":"Projectsemp"}],"_user_tags":"Important","__last_sync_on":"2026-08-03T09:28:04.557Z"}', 'method': 'dbdot', 'cmd': 'run_doc_method'}
+2026-08-03 09:30:25,592 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":7,"owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"dbdotchanged","department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[{"name":"56eqbe4bmg","owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":1,"pro1":"a1","pro2":"a2","parent":7,"parentfield":"table1","parenttype":"Employee Management","doctype":"Projectsemp"},{"name":"58jfpjomn8","owner":"Administrator","creation":"2026-08-01 14:14:57.242784","modified":"2026-08-03 12:55:01.987409","modified_by":"Administrator","docstatus":0,"idx":2,"pro1":"a1","pro2":"a2","parent":7,"parentfield":"table1","parenttype":"Employee Management","doctype":"Projectsemp"}],"_user_tags":"Important","__last_sync_on":"2026-08-03T09:30:23.680Z"}', 'method': 'dbdot', 'cmd': 'run_doc_method'}
+2026-08-04 08:50:33,779 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Employee Management","name":"new-employee-management-ovsxbbdxze","__islocal":1,"__unsaved":1,"owner":"Administrator","department":"HR","active":0,"table1":[]}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2026-08-04 10:02:50,868 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'index', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-04 10:03:23,566 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'index', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-04 10:03:31,017 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'index', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-04 10:04:10,006 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'index', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-04 10:05:37,194 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'index', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-04 10:05:42,501 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'index', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-04 10:07:20,331 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'index', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-04 10:27:10,737 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': '{"name":6,"owner":"Administrator","creation":"2026-08-01 13:42:18.791121","modified":"2026-08-01 13:42:18.791121","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"HRLL","department":"HR","designation":"hello","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[],"__last_sync_on":"2026-08-04T10:26:58.113Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2026-08-04 10:27:18,906 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': '{"name":6,"owner":"Administrator","creation":"2026-08-01 13:42:18.791121","modified":"2026-08-01 13:42:18.791121","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"HRLL","department":"HR","designation":"hello","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[],"__last_sync_on":"2026-08-04T10:26:58.113Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2026-08-04 10:28:03,750 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': '{"name":6,"owner":"Administrator","creation":"2026-08-01 13:42:18.791121","modified":"2026-08-01 13:42:18.791121","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"HRLLoo","department":"HR","designation":"hello","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[],"__last_sync_on":"2026-08-04T10:26:58.113Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2026-08-04 10:28:15,895 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': '{"name":6,"owner":"Administrator","creation":"2026-08-01 13:42:18.791121","modified":"2026-08-01 13:42:18.791121","modified_by":"Administrator","docstatus":0,"idx":0,"name1":"HRLLOkkkkk","department":"HR","designation":"hello","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[],"__last_sync_on":"2026-08-04T10:28:09.254Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2026-08-04 12:54:16,914 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":13,"owner":"Administrator","creation":"2026-08-04 14:21:50.033108","modified":"2026-08-04 14:21:50.033108","modified_by":"Administrator","docstatus":0,"idx":0,"department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[],"__last_sync_on":"2026-08-04T12:54:11.971Z","name1":"11","__unsaved":1}', 'method': 'validate', 'cmd': 'run_doc_method'}
+2026-08-04 12:54:24,541 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":13,"owner":"Administrator","creation":"2026-08-04 14:21:50.033108","modified":"2026-08-04 14:21:50.033108","modified_by":"Administrator","docstatus":0,"idx":0,"department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[],"__last_sync_on":"2026-08-04T12:54:11.971Z","name1":"11","__unsaved":1}', 'method': 'validate', 'cmd': 'run_doc_method'}
+2026-08-05 05:12:29,934 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":13,"owner":"Administrator","creation":"2026-08-04 14:21:50.033108","modified":"2026-08-04 14:21:50.033108","modified_by":"Administrator","docstatus":0,"idx":0,"department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[],"__last_sync_on":"2026-08-05T05:12:28.335Z"}', 'method': 'utility', 'cmd': 'run_doc_method'}
+2026-08-05 05:14:07,514 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"docstatus":0,"doctype":"Employee Management","name":"new-employee-management-gfojyzgbzr","__islocal":1,"__unsaved":1,"owner":"Administrator","department":"HR","active":0,"table1":[]}', 'method': 'utility', 'cmd': 'run_doc_method'}
+2026-08-05 05:14:11,080 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"docstatus":0,"doctype":"Employee Management","name":"new-employee-management-gfojyzgbzr","__islocal":1,"__unsaved":1,"owner":"Administrator","department":"HR","active":0,"table1":[]}', 'method': 'utility', 'cmd': 'run_doc_method'}
+2026-08-05 05:14:14,639 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"docstatus":0,"doctype":"Employee Management","name":"new-employee-management-gfojyzgbzr","__islocal":1,"__unsaved":1,"owner":"Administrator","department":"HR","active":0,"table1":[]}', 'method': 'utility', 'cmd': 'run_doc_method'}
+2026-08-05 05:38:43,383 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-05 05:39:41,401 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":13,"owner":"Administrator","creation":"2026-08-04 14:21:50.033108","modified":"2026-08-04 14:21:50.033108","modified_by":"Administrator","docstatus":0,"idx":0,"department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[],"__last_sync_on":"2026-08-05T05:39:39.836Z"}', 'method': 'utility', 'cmd': 'run_doc_method'}
+2026-08-05 06:04:36,906 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-05 06:04:54,207 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-05 06:05:00,795 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-05 06:05:59,523 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":13,"owner":"Administrator","creation":"2026-08-04 14:21:50.033108","modified":"2026-08-04 14:21:50.033108","modified_by":"Administrator","docstatus":0,"idx":0,"department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[],"__last_sync_on":"2026-08-05T06:05:56.575Z"}', 'method': 'utility', 'cmd': 'run_doc_method'}
+2026-08-05 06:07:56,533 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":13,"owner":"Administrator","creation":"2026-08-04 14:21:50.033108","modified":"2026-08-04 14:21:50.033108","modified_by":"Administrator","docstatus":0,"idx":0,"department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[],"__last_sync_on":"2026-08-05T06:07:55.060Z"}', 'method': 'utility', 'cmd': 'run_doc_method'}
+2026-08-05 06:09:28,562 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'docs': '{"name":13,"owner":"Administrator","creation":"2026-08-04 14:21:50.033108","modified":"2026-08-05 11:39:13.481818","modified_by":"Administrator","docstatus":0,"idx":0,"department":"HR","salary":0,"bonus":0,"total_salary":0,"experience":0,"active":0,"doctype":"Employee Management","table1":[],"name1":"yfugh"}', 'method': 'utility', 'cmd': 'run_doc_method'}
+2026-08-05 06:21:43,276 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'cmd': 'library_management.library_management.doctype.employee_management.employee_management.utility'}
+2026-08-05 06:22:29,207 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'cmd': 'library_management.library_management.library_tech.doctype.employee_management.employee_management.utility'}
+2026-08-05 06:23:35,963 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'cmd': 'library_management.library_management.library_tech.doctype.employee_management.employee_management.py.utility'}
+2026-08-05 06:27:59,105 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'cmd': 'apps.library_management.library_management.library_tech.doctype.employee_management.employee_management.utility'}
+2026-08-05 06:28:19,512 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'cmd': 'library_management.library_management.library_tech.doctype.employee_management.employee_management.utility'}
+2026-08-05 06:28:32,288 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility'}
+2026-08-05 06:37:17,879 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility'}
+2026-08-05 06:37:18,639 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility'}
+2026-08-05 06:44:59,056 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility'}
+2026-08-05 06:44:59,879 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility'}
+2026-08-05 06:45:16,745 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-05 06:45:27,909 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-05 06:47:11,965 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility'}
+2026-08-05 06:47:12,550 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility'}
+2026-08-05 06:47:12,694 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility'}
+2026-08-05 06:47:12,839 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility'}
+2026-08-05 06:47:12,965 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility'}
+2026-08-05 06:49:03,132 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility2'}
+2026-08-05 06:49:03,833 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility2'}
+2026-08-05 06:49:37,374 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility2'}
+2026-08-05 06:49:37,894 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility2'}
+2026-08-05 06:49:38,046 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility2'}
+2026-08-05 06:49:38,197 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility2'}
+2026-08-05 06:49:38,322 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility2'}
+2026-08-05 07:07:52,948 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility2'}
+2026-08-05 07:07:53,491 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility2'}
+2026-08-05 07:07:53,622 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility2'}
+2026-08-05 07:07:53,761 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility2'}
+2026-08-05 07:07:53,915 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility2'}
+2026-08-05 07:08:37,522 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility2'}
+2026-08-05 07:08:37,962 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility2'}
+2026-08-05 07:08:38,130 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility2'}
+2026-08-05 07:09:30,256 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility2'}
+2026-08-05 07:09:49,516 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility2'}
+2026-08-05 07:10:08,314 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility2'}
+2026-08-05 07:10:12,246 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility2'}
+2026-08-05 08:45:30,509 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility2'}
+2026-08-05 08:46:46,576 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-05 08:49:43,518 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-05 08:50:17,300 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-05 09:01:11,612 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility2'}
+2026-08-05 09:01:12,207 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility2'}
+2026-08-05 09:01:12,371 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility2'}
+2026-08-05 09:01:12,695 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doc': 'Employee Management', 'cmd': 'library_management.library_tech.doctype.employee_management.employee_management.utility2'}
+2026-08-05 09:47:48,801 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-05 09:48:02,345 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-05 10:19:09,745 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-06 04:53:39,367 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'doctype': 'Employee Management', 'with_parent': '1', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-08-06 06:21:39,592 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'Employee Management,10', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-06 06:24:41,637 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'Employee Management,10', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-06 06:25:00,445 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'Employee Management,10', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-06 06:25:03,619 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'Employee Management,10', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-06 06:25:04,452 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'Employee Management,10', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-06 06:25:11,053 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'Employee Management,3', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-06 06:25:14,863 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'Employee Management,4', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-06 06:25:25,434 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'Employee Management,5', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-06 06:25:27,248 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'Employee Management,5', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-06 06:25:30,309 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'Employee Management,5', 'cmd': 'frappe.desk.desk_page.getpage'}
+2026-08-06 06:25:30,943 ERROR frappe New Exception collected in error log
+Site: library.local
+Form Dict: {'name': 'Employee Management,5', 'cmd': 'frappe.desk.desk_page.getpage'}

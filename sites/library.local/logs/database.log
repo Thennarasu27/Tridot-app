@@ -1,0 +1,223 @@
+2026-07-22 05:11:11,106 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAuthor` ADD COLUMN `author` varchar(140), ADD COLUMN `country` varchar(140), ADD COLUMN `phone` varchar(140)
+2026-07-22 05:12:26,363 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBooks` ADD COLUMN `bname` varchar(140), ADD COLUMN `author` varchar(140), ADD COLUMN `country` varchar(140), ADD COLUMN `phone` varchar(140)
+2026-07-22 06:29:18,853 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent2` ADD COLUMN `start` date, ADD COLUMN `end` date
+2026-07-22 07:01:08,386 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent2` ADD COLUMN `_seen` text
+2026-07-22 09:15:34,530 WARNING database DDL Query made to DB:
+create sequence if not exists author_id_seq nocache nocycle
+2026-07-22 09:15:34,571 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAuthor` MODIFY `name` bigint
+2026-07-22 09:15:42,254 WARNING database DDL Query made to DB:
+create sequence if not exists books_id_seq nocache nocycle
+2026-07-22 09:15:42,291 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBooks` MODIFY `name` bigint
+2026-07-22 09:40:40,122 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBooks` ADD COLUMN `select_pkdb` varchar(140)
+2026-07-22 09:52:04,663 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBooks` ADD COLUMN `status` varchar(140)
+2026-07-22 09:55:52,374 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBooks` ADD COLUMN `route` varchar(140), ADD COLUMN `ch` tinyint(4) NOT NULL DEFAULT 0
+2026-07-22 09:56:14,655 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBooks` ADD COLUMN `check` tinyint(4) NOT NULL DEFAULT 0
+2026-07-22 10:27:44,341 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStudent2` ADD COLUMN `route` varchar(140)
+2026-07-23 05:01:48,622 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBooks` ADD COLUMN `workflow_state` varchar(140)
+2026-07-29 06:48:40,770 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBooks` ADD COLUMN `book1` tinyint(4) NOT NULL DEFAULT 0
+2026-07-30 05:35:44,579 WARNING database DDL Query made to DB:
+create table `tabDetails` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-07-30 05:56:33,183 WARNING database DDL Query made to DB:
+create sequence if not exists details_id_seq nocache nocycle
+2026-07-30 05:56:33,227 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDetails` MODIFY `name` bigint
+2026-07-30 05:56:33,257 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDetails` ADD COLUMN `name1` varchar(140), ADD COLUMN `email` varchar(140), ADD COLUMN `age` int(11) NOT NULL DEFAULT 0, ADD COLUMN `department` varchar(140), ADD COLUMN `marks` decimal(21,9) NOT NULL DEFAULT 0.0
+2026-07-31 05:05:09,927 WARNING database DDL Query made to DB:
+create table `tabEmployee Management` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-07-31 05:11:37,738 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Management` ADD COLUMN `id` varchar(140), ADD COLUMN `name1` varchar(140), ADD COLUMN `email` varchar(140), ADD COLUMN `phone` varchar(140), ADD COLUMN `dob` date, ADD COLUMN `joining` datetime(6), ADD COLUMN `department` varchar(140), ADD COLUMN `designation` varchar(140), ADD COLUMN `salary` decimal(21,9) NOT NULL DEFAULT 0.0, ADD COLUMN `bonus` decimal(21,9) NOT NULL DEFAULT 0.0, ADD COLUMN `total_salary` decimal(21,9) NOT NULL DEFAULT 0.0, ADD COLUMN `experience` int(11) NOT NULL DEFAULT 0, ADD COLUMN `active` tinyint(4) NOT NULL DEFAULT 0
+2026-07-31 06:20:49,737 WARNING database DDL Query made to DB:
+create sequence if not exists employee_management_id_seq nocache nocycle
+2026-07-31 06:20:49,791 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Management` MODIFY `name` bigint
+2026-07-31 06:35:55,476 WARNING database DDL Query made to DB:
+create table `tabLeave` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-07-31 06:36:20,621 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave` ADD COLUMN `name1` varchar(140)
+2026-08-01 06:17:26,013 WARNING database DDL Query made to DB:
+create table `tabProjectsemp` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-08-01 06:18:48,616 WARNING database DDL Query made to DB:
+alter table `tabProjectsemp` add column if not exists parent varchar(140)
+2026-08-01 06:18:48,617 WARNING database DDL Query made to DB:
+alter table `tabProjectsemp` add column if not exists parenttype varchar(140)
+2026-08-01 06:18:48,618 WARNING database DDL Query made to DB:
+alter table `tabProjectsemp` add column if not exists parentfield varchar(140)
+2026-08-01 06:18:48,709 WARNING database DDL Query made to DB:
+ALTER TABLE `tabProjectsemp` ADD COLUMN `pro1` varchar(140), ADD COLUMN `pro2` varchar(140)
+2026-08-01 07:26:54,397 WARNING database DDL Query made to DB:
+alter table `tabProjectsemp` add column if not exists parent varchar(140)
+2026-08-01 07:26:54,400 WARNING database DDL Query made to DB:
+alter table `tabProjectsemp` add column if not exists parenttype varchar(140)
+2026-08-01 07:26:54,401 WARNING database DDL Query made to DB:
+alter table `tabProjectsemp` add column if not exists parentfield varchar(140)
+2026-08-01 09:32:22,970 WARNING database DDL Query made to DB:
+create table `tablistitem` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-08-01 09:33:47,827 WARNING database DDL Query made to DB:
+ALTER TABLE `tablistitem` ADD COLUMN `items` varchar(140)
+2026-08-01 09:34:14,154 WARNING database DDL Query made to DB:
+create sequence if not exists listitem_id_seq nocache nocycle
+2026-08-01 09:34:14,197 WARNING database DDL Query made to DB:
+ALTER TABLE `tablistitem` MODIFY `name` bigint
+2026-08-01 09:37:01,833 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Management` ADD COLUMN `links` varchar(140)
+2026-08-03 08:48:32,096 WARNING database DDL Query made to DB:
+create table `tabparent` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`lft` int(11) NOT NULL DEFAULT 0,
+`rgt` int(11) NOT NULL DEFAULT 0,
+`is_group` tinyint(4) NOT NULL DEFAULT 0,
+`old_parent` varchar(140),
+`parent_parent` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-08-03 09:04:38,277 WARNING database DDL Query made to DB:
+create table `tabtree` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`lft` int(11) NOT NULL DEFAULT 0,
+`rgt` int(11) NOT NULL DEFAULT 0,
+`is_group` tinyint(4) NOT NULL DEFAULT 0,
+`old_parent` varchar(140),
+`parent_tree` varchar(140),
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-08-04 08:10:51,216 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Management` ADD COLUMN `custom_age` varchar(140)
+2026-08-07 05:02:51,611 WARNING database DDL Query made to DB:
+create table `tabtask` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index creation(creation))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-08-07 05:09:50,485 WARNING database DDL Query made to DB:
+ALTER TABLE `tabtask` ADD COLUMN `task_subject` varchar(140)

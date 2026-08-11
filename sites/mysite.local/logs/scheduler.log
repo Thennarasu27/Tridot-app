@@ -1,0 +1,205 @@
+2026-07-15 11:40:00,364 ERROR scheduler Exception in Enqueue Events for Site mysite.local
+Traceback (most recent call last):
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/connection.py", line 2610, in get_connection
+    connection.can_read()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/connection.py", line 1110, in can_read
+    return self._parser.can_read(timeout)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/_parsers/hiredis.py", line 101, in can_read
+    return self.read_from_socket(timeout=timeout, raise_on_timeout=False)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/_parsers/hiredis.py", line 112, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/connection.py", line 855, in connect_check_health
+    sock = self.retry.call_with_retry(
+        lambda: self._connect(), lambda error: self.disconnect(error)
+    )
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/retry.py", line 116, in call_with_retry
+    return do()
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/connection.py", line 856, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ~~~~~~~~~~~~~^^
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/connection.py", line 1306, in _connect
+    raise err
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/connection.py", line 1290, in _connect
+    sock.connect(socket_address)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thennarasu/new-bench/apps/frappe/frappe/utils/scheduler.py", line 120, in enqueue_events_for_site
+    enqueue_events()
+    ~~~~~~~~~~~~~~^^
+  File "/home/thennarasu/new-bench/apps/frappe/frappe/utils/scheduler.py", line 140, in enqueue_events
+    if job_type.enqueue():
+       ~~~~~~~~~~~~~~~~^^
+  File "/home/thennarasu/new-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
+    if not self.is_job_in_queue():
+           ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/thennarasu/new-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 96, in is_job_in_queue
+    return is_job_enqueued(self.rq_job_id)
+  File "/home/thennarasu/new-bench/apps/frappe/frappe/utils/background_jobs.py", line 665, in is_job_enqueued
+    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
+           ~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/thennarasu/new-bench/apps/frappe/frappe/utils/background_jobs.py", line 670, in get_job_status
+    if job := get_job(job_id):
+              ~~~~~~~^^^^^^^^
+  File "/home/thennarasu/new-bench/apps/frappe/frappe/utils/background_jobs.py", line 676, in get_job
+    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/rq/job.py", line 654, in fetch
+    job.refresh()
+    ~~~~~~~~~~~^^
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/rq/job.py", line 1011, in refresh
+    data = self.connection.hgetall(self.key)
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/commands/core.py", line 5269, in hgetall
+    return self.execute_command("HGETALL", name, keys=[name])
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/client.py", line 657, in execute_command
+    return self._execute_command(*args, **options)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/client.py", line 663, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/utils.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/connection.py", line 2617, in get_connection
+    connection.connect()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/connection.py", line 846, in connect
+    self.connect_check_health(check_health=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/connection.py", line 863, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
+2026-07-15 11:44:00,487 ERROR scheduler Exception in Enqueue Events for Site mysite.local
+Traceback (most recent call last):
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/connection.py", line 855, in connect_check_health
+    sock = self.retry.call_with_retry(
+        lambda: self._connect(), lambda error: self.disconnect(error)
+    )
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/retry.py", line 116, in call_with_retry
+    return do()
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/connection.py", line 856, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+            ~~~~~~~~~~~~~^^
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/connection.py", line 1306, in _connect
+    raise err
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/connection.py", line 1290, in _connect
+    sock.connect(socket_address)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thennarasu/new-bench/apps/frappe/frappe/utils/scheduler.py", line 120, in enqueue_events_for_site
+    enqueue_events()
+    ~~~~~~~~~~~~~~^^
+  File "/home/thennarasu/new-bench/apps/frappe/frappe/utils/scheduler.py", line 140, in enqueue_events
+    if job_type.enqueue():
+       ~~~~~~~~~~~~~~~~^^
+  File "/home/thennarasu/new-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 74, in enqueue
+    if not self.is_job_in_queue():
+           ~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/thennarasu/new-bench/apps/frappe/frappe/core/doctype/scheduled_job_type/scheduled_job_type.py", line 96, in is_job_in_queue
+    return is_job_enqueued(self.rq_job_id)
+  File "/home/thennarasu/new-bench/apps/frappe/frappe/utils/background_jobs.py", line 665, in is_job_enqueued
+    return get_job_status(job_id) in (JobStatus.QUEUED, JobStatus.STARTED)
+           ~~~~~~~~~~~~~~^^^^^^^^
+  File "/home/thennarasu/new-bench/apps/frappe/frappe/utils/background_jobs.py", line 670, in get_job_status
+    if job := get_job(job_id):
+              ~~~~~~~^^^^^^^^
+  File "/home/thennarasu/new-bench/apps/frappe/frappe/utils/background_jobs.py", line 676, in get_job
+    return Job.fetch(create_job_id(job_id), connection=get_redis_conn())
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/rq/job.py", line 654, in fetch
+    job.refresh()
+    ~~~~~~~~~~~^^
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/rq/job.py", line 1011, in refresh
+    data = self.connection.hgetall(self.key)
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/commands/core.py", line 5269, in hgetall
+    return self.execute_command("HGETALL", name, keys=[name])
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/client.py", line 657, in execute_command
+    return self._execute_command(*args, **options)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/client.py", line 663, in _execute_command
+    conn = self.connection or pool.get_connection()
+                              ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/utils.py", line 196, in wrapper
+    return func(*args, **kwargs)
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/connection.py", line 2603, in get_connection
+    connection.connect()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/connection.py", line 846, in connect
+    self.connect_check_health(check_health=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/thennarasu/new-bench/env/lib/python3.14/site-packages/redis/connection.py", line 863, in connect_check_health
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:11000. Connection refused.
+2026-07-23 11:36:00,131 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for mysite.local
+2026-07-23 11:36:00,156 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for mysite.local
+2026-07-23 11:36:00,157 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for mysite.local
+2026-07-23 11:36:00,158 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for mysite.local
+2026-07-23 11:36:00,160 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for mysite.local
+2026-07-23 11:36:00,162 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for mysite.local
+2026-07-23 11:36:00,162 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for mysite.local
+2026-07-23 11:36:00,164 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for mysite.local
+2026-07-23 11:36:00,165 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for mysite.local
+2026-07-24 07:20:00,237 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for mysite.local
+2026-07-24 07:20:00,238 ERROR scheduler Skipped queueing frappe.email.doctype.notification.notification.trigger_offset_alerts because it was found in queue for mysite.local
+2026-07-24 07:20:00,239 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for mysite.local
+2026-07-24 07:20:00,240 ERROR scheduler Skipped queueing frappe.utils.telemetry.pulse.client.send_queued_events because it was found in queue for mysite.local
+2026-07-24 07:20:00,241 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for mysite.local
+2026-07-24 07:20:00,242 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for mysite.local
+2026-07-24 07:20:00,244 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for mysite.local
+2026-07-24 07:20:00,245 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for mysite.local
+2026-07-24 08:12:00,113 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for mysite.local
+2026-07-29 11:48:00,587 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for mysite.local
+2026-07-29 11:48:00,590 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for mysite.local
+2026-07-29 11:48:00,591 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for mysite.local
+2026-07-29 11:48:00,592 ERROR scheduler Skipped queueing frappe.utils.telemetry.pulse.client.send_queued_events because it was found in queue for mysite.local
+2026-07-29 11:48:00,593 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for mysite.local
+2026-07-29 11:48:00,595 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for mysite.local
+2026-07-29 11:48:00,596 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for mysite.local
+2026-07-29 11:48:00,597 ERROR scheduler Skipped queueing frappe.email.doctype.notification.notification.trigger_offset_alerts because it was found in queue for mysite.local
+2026-08-03 12:32:00,473 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for mysite.local
+2026-08-03 12:32:00,476 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for mysite.local
+2026-08-03 12:32:00,478 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for mysite.local
+2026-08-03 12:32:00,479 ERROR scheduler Skipped queueing frappe.email.doctype.notification.notification.trigger_offset_alerts because it was found in queue for mysite.local
+2026-08-03 12:32:00,479 ERROR scheduler Skipped queueing frappe.utils.telemetry.pulse.client.send_queued_events because it was found in queue for mysite.local
+2026-08-03 12:32:00,480 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_calendar.google_calendar.sync because it was found in queue for mysite.local
+2026-08-03 12:32:00,480 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for mysite.local
+2026-08-03 12:32:00,481 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for mysite.local
+2026-08-03 12:32:00,482 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for mysite.local
+2026-08-03 12:32:00,483 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for mysite.local
+2026-08-03 12:32:00,484 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for mysite.local
+2026-08-03 12:32:00,485 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for mysite.local
+2026-08-03 12:32:00,486 ERROR scheduler Skipped queueing frappe.email.queue.retry_sending_emails because it was found in queue for mysite.local
+2026-08-03 12:32:00,487 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for mysite.local
+2026-08-03 12:32:00,487 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for mysite.local
+2026-08-03 12:32:00,488 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for mysite.local
+2026-08-03 12:32:00,489 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for mysite.local
+2026-08-03 12:32:00,489 ERROR scheduler Skipped queueing frappe.model.utils.link_count.update_link_count because it was found in queue for mysite.local
+2026-08-03 12:32:00,490 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for mysite.local
+2026-08-03 12:32:00,491 ERROR scheduler Skipped queueing frappe.search.sqlite_search.build_index_if_not_exists because it was found in queue for mysite.local
+2026-08-03 12:32:00,492 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for mysite.local
+2026-08-03 12:32:00,492 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for mysite.local
+2026-08-03 13:44:00,584 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for mysite.local
+2026-08-03 13:44:00,588 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for mysite.local
+2026-08-03 13:44:00,590 ERROR scheduler Skipped queueing frappe.desk.page.backups.backups.delete_downloadable_backups because it was found in queue for mysite.local
+2026-08-03 13:44:00,591 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_hourly_updates because it was found in queue for mysite.local
+2026-08-03 13:44:00,593 ERROR scheduler Skipped queueing frappe.website.doctype.personal_data_deletion_request.personal_data_deletion_request.process_data_deletion_request because it was found in queue for mysite.local
+2026-08-03 13:44:00,594 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for mysite.local
+2026-08-03 13:44:00,596 ERROR scheduler Skipped queueing frappe.desk.utils.delete_old_exported_report_files because it was found in queue for mysite.local
+2026-08-03 13:44:00,597 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for mysite.local
+2026-08-03 13:44:00,601 ERROR scheduler Skipped queueing frappe.model.utils.user_settings.sync_user_settings because it was found in queue for mysite.local
